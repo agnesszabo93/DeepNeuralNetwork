@@ -1,0 +1,166 @@
+%!TEX root = dolgozat.tex
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Alapok}\label{ch:ALAP}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{osszefoglal}
+	Ez lesz egy dolgozat. Ebben a fejezetben a \LaTeX használatát mutatjuk be egy példán keresztül.
+	
+	A példa egy korábbi jegyzetbõl kivett fejezetekbõl áll.
+\end{osszefoglal}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{A gépi tanulás}\label{sec:ALAP:ml}
+
+A gépi tanulás neve  \citeN{Mitchell97} azonos címû -- ``{\em Machine Learning}'' -- könyvébõl származtatható.
+A könyv alapján azt a kutatási területet nevezzük így, amelyben a cél olyan programok írása, amelyek  futtatásuk során fejlõdnek, vagyis valamilyen szempont szerint jobbak, okosabbak lesznek.%
+\footnote{ %
+Részlet \citeN{Mitchell97} könyvébõl:\newline
+    ``The field of machine learning is concerned with the question of how to construct computer programs    that automatically improve with experience.''
+}  %
+Itt az ``okosság'' metaforikus: a futási idõ folyamán valamilyen mérhetõ jellemzõnek a javulását értjük alatta.
+Például a felhasználás kezdetén a szövegfelismerõ még nem képes a szövegek azonosítására, azonban a használat -- és a felhasználói utasítások -- után úgy módosítja a mûködési paramétereit, hogy a karakterek egyre nagyobb hányadát tudja felismerni.
+Egy másik példa a predikció: olyan algoritmust szeretnénk írni, mely
+folyamatosan figyeli egy folyó -- legyen ez például a Szamos --
+vízszintjét. Programunk a vízszintet kellene kettõtõl öt napig
+elõrejelezze pusztán a megfigyelt idõsor múltbeli értékei alapján.
+Mivel a predikció így túl nehéz, adatsorunkat a vízszint mellett
+az aznapi csapadékkal is kiegészítjük. Mivel most a
+visszamenõleges csapadékmennyiségek is algoritmusunk bemeneti
+adatai, sokkal jobban fog teljesíteni, annak ellenére, hogy nem
+építettünk modellt a csapadék és vízszint kapcsolatáról.
+
+A gépi tanulás a feladatokhoz fogalmaz meg modelleket, algoritmusokat. Az algoritmusok közül néhány mára már standard lett.  A felismerõ algoritmusok közül néhány kiemelkedõ eredményt ért el, például a speciálisan optimalizált struktúrájú neurális hálók a számjegyek felismerésére,%
+\footnote{%
+ Yan LeCun (\url{http://yann.lecun.com/}\label{link:lecun}) alkalmazta nagy sikerrel a neurális hálókat a MNIST kézzel írott számjegyek képeinek adatbázisára. A számjegyek felismerését a program az embernél sokkal jobban végzi, a hibaszázalék $1\%$ alatti.
+}  %
+az EM és a Kohonen algoritmusok az adatok automatikus csoportosítására,%
+\footnote{%
+    Teuvo Kohonen a finn nyelv fonémáinak a preprocesszálását oldotta meg egy speciális neurális hálóval.
+}  %
+illetve a rejtett Markov-modellek és azok alkalmazásai a
+hangfelismerésnél \cite{RabinerJuang93} vagy a bioinformatikában
+\cite{BaldiBrunak98}. A rejtett Markov-modelleket nem mutatjuk be
+a jegyzetben. A neurális hálók mellett fontos szerepet játszik a
+\citeN{Vapnik95} által elindított ``szupport-vektor'' gépek
+fogalma. Ehhez hasonlítanak majdnem minden gépi tanulásos
+algoritmust.
+
+A modellezésnél fontos a kinyert információ%
+\footnote{%
+  Itt és máshol is a jegyzet során az információ szót idézõjelek közé kellene tenni. Legfõképp azért, mert nem nagyon tudjuk, hogy mit is értsünk információ alatt az olyan rendszerekben, amelyeket szeretnénk ``minél jobban'' mûködtetni.  Általában azonban a ``kinyert információ'' az adott modell feltételezése mellett a paramétereket jelenti.
+}  %
+hasznosítása, azaz a modell használata új adatokra. Napjainkban
+fontos az is, hogy az adatot szolgáltató szakértõk tudjanak
+következtetni az adatokat generáló folyamatokról. Egy
+példa erre a DNS adatok egy-egy gyógyszerre való érzékenységének a
+mérése: a gyógyszerészeket az érdekli, hogy a DNS mely részei
+felelõsek az illetõ érzékenységért, ezért a modellezõnek ajánlott
+olyan modellt építeni, amely képes szeparálni az aktív géneket az
+inaktívaktól.
+
+A gépi tanulás viszonylag új diszciplína, és szoros kapcsolatban
+van a mesterséges intelligencia numerikus módszereken alapuló ágaival:
+esetenként alternatívákat nyújt modellek építésére. A neurális
+hálókat is tekinthetjük gépi tanulásos algoritmusoknak, ahol a
+modell a fekete doboz és a modell tanításánál minél jobb tesztelési
+teljesítményre törekszünk.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Mesterséges intelligencia és neurális hálók}\label{sec:ALAP:mi}
+
+
+A mesterséges intelligencia a huszadik század második felétõl
+külön kutatási terület. A megnevezés az 1956-os Darthmouth-ban
+tartott konferencia után terjedt el, mivel ekkor használták
+elõször a ``mesterséges intelligencia''
+kifejezést.  
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Adatelemzés}\label{sec:ALAP:adatelem}
+
+A mesterséges intelligencia azon módszereit, amelyeket numerikus
+vagy {\em
+  enyhén strukturált}%
+\footnote{%
+ {\bf Enyhén} strukturált (nagyon felületesen): az adatok komponensei
+  (dimenziók) közötti kapcsolat nem túl bonyolult.
+}  %
+adatokra tudunk alkalmazni, gépi tanulásos módszereknek nevezzük
+\cite{Mitchell97}.  A gépi tanulás e meghatározás alapján egy
+szerteágazó tudományág, amelynek keretén belül sok módszerrõl és
+ennek megfelelõen sok alkalmazási területrõl beszélhetünk. A
+korábban említett neurális modellekkel ellentétben a központban
+itt az adatok vannak: azok típusától függõen választunk például a
+binomiális modell és a normális eloszlás, a fõ- vagy
+független-komponensek módszere vagy a k-közép és EM
+algoritmusok között.
+Egyre több adatunk van, azonban az ``információt'' megtalálni egyre nehezebb.%
+\footnote{%
+    David Donoho, a Stanford Egyetem professzora szerint a XXI. századot az adatok határozzák meg: azok gyûjtése, szállítása, tárolása, megjelenítése, illetve az adatok {\bf felhasználása}.
+}  %
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Szerkesztés}\label{sec:ALAP:szerkeszt}
+
+A következõkben áttekintjük a \LaTeX dokumentumok szerkesztésének alapjait.
+
+Átfogó referenciák a következõk:
+\begin{description}%
+	\item[\cite{LatexNotSoShort}] -- egy \LaTeX gyorstalpaló. A könyvben nagyon
+	  célirányosan mutatják be a szerkesztési szabályokat és a fontosabb parancsokat.
+	\item[\cite{LatexNotSoShortHU}] -- a gyorstalpaló magyar változata egy BME-s
+	  csapat jóvoltából.
+	\item[\cite{Doob95,MittelbachEtAl04}] -- az angol nyelvû alapkönyvek. Kérésre az
+	  utóbbi -- \cite{MittelbachEtAl04} -- elérhetõvé tehetõ.
+\end{description}
+Természetesen a Kari könyvtárban is találtok könyvészetet. A fentebb említetteken kívül nagyon sok internetes oldal tartalmaz \LaTeX szerkesztésrõl bemutatókat:
+
+
+\begin{figure}[t]
+  \centering
+  \pgfimage[width=0.2\linewidth]{images/bayes}
+  \caption[Példa képek beszúrására]%
+  {Példa képek beszúrására: a képen rev. Thomas Bayes látható. A képek után {\em kötelezõen} szerepelnie kell a forrásnak:\\
+  {\white .}\hfill\url{http://en.wikipedia.org/wiki/Thomas_Bayes}}
+  \label{fig:ALAP:sm1}
+\end{figure}
+
+Képeket beszúrni a\\
+ \verb+\pgfimage[width=0.4\linewidth]{images/bayes}+\\
+paranccsal lehet, ahol a\\
+\verb+width=0.4\linewidth+ \\
+a kép szélességét jelenti. Amennyiben a magasság nincs megadva -- mintjelen esetben -- akkor azt automatikusan számítja ki a rendszer, az eredeti kép arányait figyelembe véve.
+Egy másik jellegzetesség az, hogy a képek kiterjesztését nem adjuk meg -- a \LaTeX megkeresi a számára elfogadható kiterjesztéseket, azok listájából az elsõt használja. A .JPG, .PNG, .TIFF, valamint a .PDF kiterjesztések is használhatók.
+
+Két kép egymás mellé tétele a \verb+tabular+ környezet-mintával lehetséges, amint a \ref{fig:ALAP:sm2} ábrán látjuk.
+Amennyiben grafikonunk van, általában ajánlott VEKTOROSAN menteni -- ezt általában a PDF driverrel tesszük -- az eredmény a \ref{fig:ALAP:sm3} ábrán látható.
+
+\begin{figure}[t]
+  \centering
+  \begin{tabular}{ccc}
+		  \pgfimage[height=4cm]{images/bayes}
+		  &
+		  \pgfimage[height=4cm]{images/vapnik}
+	\end{tabular}
+  \caption[Példa képek beszúrására egy táblában]%
+  {Példa képek beszúrására: a bal oldalon rev. Thomas Bayes, a jobb oldalon egy jelenkori matematikus, Vladimir Vapnik látható.\\
+  {\white .}\url{http://en.wikipedia.org/wiki/Vladimir_Vapnik}}
+  \label{fig:ALAP:sm2}
+\end{figure}
+
+\begin{figure}[t]
+  \centering
+  \pgfimage[width=0.7\linewidth]{images/parzen}
+  \caption[Példa grafika beszúrására]%
+  {Példa grafika beszúrására.}
+  \label{fig:ALAP:sm3}
+\end{figure}
+
+A szerkesztés folyamata során ajánlott a:
+\begin{itemize}
+	\item különbözõ strukturális elemek használata: a \verb+\chapter+, \verb+\section+, \verb+\subsection+, \verb+\subsubsection+ parancsok.
+	\item a listák használata felsorolásoknál;
+\end{itemize}

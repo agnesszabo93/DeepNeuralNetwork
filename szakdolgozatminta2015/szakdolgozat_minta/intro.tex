@@ -1,0 +1,18 @@
+%!TEX root = dolgozat.tex
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Introduction}\label{ch:INTRO}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Goal}\label{sec:INTRO:goal}
+
+ ide egy altalanos mondat I am developing a system that can detect and recognise road signs on pictures taken in real life enviroment. There are many similar systems, but the robust cost-effective solution is still an active research subject. Since there are numerous types of traffic signs and many of them are similar to one another, the task of classifying them is challenging. The recognizability of the road signs is also affected by the following things: luminous intensity, shading, partial coverage, and other obstacles.
+
+My goal is to make a fast and efficient system. This can also be a first step to developing a system that can recognise traffic signs on video files and on live camera feed.
+
+\section{Implementation}\label{sec:INTRO:implement}
+
+This system recognises road signs with machine learning algorithms.I use artificial neural networks, a subclass of S L. I use supervised learning, since I know the desired outcome of an input(the road sign's class), more precisly artificial neural networks.
+
+When an application is placed in real enviroment it is crucial for it to be reliable. Wrongly identifying a road sign can have fatal consequences.
+
+Because traffic signs can change with time it is important that the designed system can accomodate to these changes, without the need to change it to the core. Artificial neural networks are perfect for this, because if the data changes it is enough to perform the learning process again, there is no need do change the code.

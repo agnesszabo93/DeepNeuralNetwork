@@ -1,0 +1,22 @@
+\select@language {magyar} \contentsline {chapter}{\numberline {1}Introduction}{3}{chapter.1}
+\select@language {magyar} \contentsline {section}{\numberline {1.1}Goal}{3}{section.1.1}
+\select@language {magyar} \contentsline {section}{\numberline {1.2}Implementation}{3}{section.1.2}
+\select@language {magyar} \contentsline {chapter}{\numberline {2}Road signs}{4}{chapter.2}
+\select@language {magyar} \contentsline {section}{\numberline {2.1}What are road signs}{4}{section.2.1}
+\select@language {magyar} \contentsline {section}{\numberline {2.2}Charateristics}{4}{section.2.2}
+\select@language {magyar} \contentsline {section}{\numberline {2.3}Data set}{4}{section.2.3}
+\select@language {magyar} \contentsline {subsection}{\numberline {2.3.1}Training data}{4}{subsection.2.3.1}
+\select@language {magyar} \contentsline {subsection}{\numberline {2.3.2}Test data}{5}{subsection.2.3.2}
+\select@language {magyar} \contentsline {chapter}{\numberline {3}Segmentation}{6}{chapter.3}
+\select@language {magyar} \contentsline {chapter}{\numberline {4}Preprocessing images}{7}{chapter.4}
+\select@language {magyar} \contentsline {section}{\numberline {4.1}Color spaces}{7}{section.4.1}
+\select@language {magyar} \contentsline {subsection}{\numberline {4.1.1}RGB color space}{7}{subsection.4.1.1}
+\select@language {magyar} \contentsline {subsection}{\numberline {4.1.2}HSV color space}{8}{subsection.4.1.2}
+\select@language {magyar} \contentsline {section}{\numberline {4.2}Implementation}{8}{section.4.2}
+\select@language {magyar} \contentsline {chapter}{\numberline {5}Neural networks}{9}{chapter.5}
+\select@language {magyar} \contentsline {section}{\numberline {5.1}Artificial neurons}{9}{section.5.1}
+\select@language {magyar} \contentsline {subsection}{\numberline {5.1.1}Sigmoid neuron}{9}{subsection.5.1.1}
+\select@language {magyar} \contentsline {section}{\numberline {5.2}Architecture}{9}{section.5.2}
+\select@language {magyar} \contentsline {section}{\numberline {5.3}Stochastic gradient descent}{10}{section.5.3}
+\select@language {magyar} \contentsline {section}{\numberline {5.4}Backpropagation}{10}{section.5.4}
+\select@language {magyar} \contentsline {chapter}{\numberline {A}Fontosabb programk\'odok list\'aja}{11}{appendix.A}

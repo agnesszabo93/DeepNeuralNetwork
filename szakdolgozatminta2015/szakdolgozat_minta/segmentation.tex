@@ -1,0 +1,14 @@
+%!TEX root = dolgozat.tex
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Segmentation}\label{ch:SEGMENT}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+In order to find traffic signs on an image, I use segmentation. Segmentation is a process of cutting sub-images out of the original one. 
+
+There are several different types of procedures for image segmentation. These include: edge and line oriented segmentation, and representation schemes, region growing methods, clustering, and region splitting.
+
+The method I used is based on randomly selecting segments from the original image. I generate square segments by randomly selecting a point from the original image and a random length.
+
+Because a picture taken from real environment may contain more than just one road sign, it is important to search the entire image. The large number of segments results in a high probability of detecting each road sign on the image. The size of a sign may also vary, therefore, during segmentation it is important that the size of the segmented images vary the same way. 
+
+By randomly selecting the segments from the original picture a significant number of the generated images will not contain a traffic sign or they will contain it only partially. This is the reason why the classification of image must recognize road signs even if only 70-80\% is visible on the selected segment.

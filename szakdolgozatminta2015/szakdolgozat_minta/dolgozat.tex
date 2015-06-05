@@ -1,0 +1,126 @@
+% BEÁLLÍTÁSOK - JOBB NEM VÁLTOZTATNI
+
+\documentclass[final]{ubb_dolgozat}
+\usepackage{definitions}
+\usepackage{pdfpages}
+\usepackage{listings}
+
+\newcommand{\pdf}[1]{pythonCodes/#1.pdf}
+%%
+
+
+% milyen nyelveken akarunk forráskódot megjeleníteni
+\lstloadlanguages{C, C++, Python}
+
+% ezt be lehet tenni MINDEGYIK megjelenítendõ kód elé.
+\lstset{language=Python}
+
+
+%% MELYIK ÉVBEN ADJUK LE
+\submityear{%
+2015
+}
+%% MELYIK HÓNAPBAN ADJUK LE
+\submitmonthHU{%
+Július
+}
+\submitmonthRO{%
+Iulie
+}
+\submitmonthEN{%
+July
+}
+
+\titleHU{%
+Forgalmi táblák felismerése
+}
+\titleEN{%
+Road sign recognition
+}
+
+\titleRO{%
+Recunoa\c{s}terea semnelor de circula\c{t}ie
+}
+
+\author{%
+Szabo Ágnes-Teréz
+}
+
+%%
+\tutorHU{%
+Csató Lehel\\
+ {\large Babe\c{s}--Bolyai Tudományegyetem,\\
+ Matematika és Informatika Kar}
+}
+
+%%
+\tutorRO{%
+Csató Lehel\\
+ {\large Universitatea Babe\c{s}--Bolyai,\\
+ Facultatea de Matematic\u{a} \c{s}i Informatic\u{a} }%
+}
+%%
+\tutorEN{%
+Csató Lehel
+ {\large Babe\c{s}--Bolyai University,\\
+ Faculty of Mathematics and Informatics}
+}
+
+
+%\includeonly{bevezet}
+
+
+\begin{document}
+
+%% ABSTRAKT
+\begin{abstractEN} % ANGOL VÁLTOZAT
+
+\vfill
+I work on a system which as an input gets a sound file, proccesses it, analyzes it, and as an output generates a sheet music, which contains the detected music notes from the sound file.
+
+
+This work is the result of my own activity. I have neither given nor received unauthorized assistance on this work.
+
+\vfill
+
+\end{abstractEN}
+
+
+% ez a címoldal része
+\maketitle
+%% 
+
+% a dolgozat tartalomjegyzéke -- ez automatikusan generálódik a STRUKTÚRA alapján.
+{ \baselineskip 1ex
+  \parskip 1ex
+  \tableofcontents
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%         a dolgozat tartalma         %%%%%%%%%%%%
+
+
+
+% a bevezetõ fejezet FILE-ja.
+\include{intro}
+\include{roadSigns}
+\include{segmentation}
+\include{preprocessing}
+\include{neuralnet}
+
+
+\appendix
+\include{programok}
+
+
+{ \renewcommand{\baselinestretch}{0.8}\normalsize %
+  \setlength{\itemsep}{-2.4mm}
+  \setlength{\bibspacing}{0.67\baselineskip}
+  \bibliographystyle{abbrvnat_hu}
+  \bibliography{konyveszet}
+}
+
+
+
+\end{document}
