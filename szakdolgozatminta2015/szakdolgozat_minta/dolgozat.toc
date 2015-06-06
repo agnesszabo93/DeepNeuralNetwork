@@ -19,4 +19,3 @@
 \select@language {magyar} \contentsline {section}{\numberline {5.2}Architecture}{9}{section.5.2}
 \select@language {magyar} \contentsline {section}{\numberline {5.3}Stochastic gradient descent}{10}{section.5.3}
 \select@language {magyar} \contentsline {section}{\numberline {5.4}Backpropagation}{10}{section.5.4}
-\select@language {magyar} \contentsline {chapter}{\numberline {A}Fontosabb programk\'odok list\'aja}{11}{appendix.A}

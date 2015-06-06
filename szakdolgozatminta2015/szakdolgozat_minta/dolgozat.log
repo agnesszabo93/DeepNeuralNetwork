@@ -1,7 +1,9 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.3.6)  4 JUN 2015 21:44
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.3.6)  6 JUN 2015 23:46
 entering extended mode
 **dolgozat.tex
-(D:\szakdolgozatminta2015\szakdolgozat_minta\dolgozat.tex
+
+(D:\Allamvizsga\DeepNeuralNetwork\szakdolgozatminta2015\szakdolgozat_minta\dolg
+ozat.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -13,7 +15,9 @@ german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
 ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
 an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
 ishmax, welsh, loaded.
-(D:\szakdolgozatminta2015\szakdolgozat_minta\ubb_dolgozat.cls
+
+(D:\Allamvizsga\DeepNeuralNetwork\szakdolgozatminta2015\szakdolgozat_minta\ubb_
+dolgozat.cls
 Document Class: ubb_dolgozat 2009/11/28 v1.0 Babes-Bolyai Egyetem stilus-file.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\basiclayer\pgf.sty"
 ("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\utilities\pgfrcs.sty"
@@ -288,8 +292,8 @@ File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen141
 )
-(D:\szakdolgozatminta2015\szakdolgozat_minta\definitions.sty
-("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.sty"
+(D:\Allamvizsga\DeepNeuralNetwork\szakdolgozatminta2015\szakdolgozat_minta\defi
+nitions.sty ("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.sty"
 Package: babel 2008/07/08 v3.8m The Babel package
 
 *************************************
@@ -298,10 +302,10 @@ Package: babel 2008/07/08 v3.8m The Babel package
 ("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\bblopts.cfg"
 File: bblopts.cfg 2006/07/31 v1.0 MiKTeX 'babel' configuration
 )
-(D:\szakdolgozatminta2015\szakdolgozat_minta\magyar.ldf
+(D:\Allamvizsga\DeepNeuralNetwork\szakdolgozatminta2015\szakdolgozat_minta\magy
+ar.ldf
 Language: magyar 2007/10/19 v1.5 Magyar support from the babel v3.7 system
-
-("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.def"
+ ("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.def"
 File: babel.def 2008/07/08 v3.8m Babel common definitions
 \babel@savecnt=\count98
 \U@D=\dimen142
@@ -663,10 +667,10 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count141
 )
-(D:\szakdolgozatminta2015\szakdolgozat_minta\natbibspacing.sty
+(D:\Allamvizsga\DeepNeuralNetwork\szakdolgozatminta2015\szakdolgozat_minta\natb
+ibspacing.sty
 \bibspacing=\dimen176
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
 Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty"
@@ -836,19 +840,42 @@ File: lstlang1.sty 2014/09/06 1.5e listings language file
 ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
 File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
 )
-(D:\szakdolgozatminta2015\szakdolgozat_minta\dolgozat.aux
-(D:\szakdolgozatminta2015\szakdolgozat_minta\intro.aux)
-(D:\szakdolgozatminta2015\szakdolgozat_minta\roadSigns.aux
+(D:\Allamvizsga\DeepNeuralNetwork\szakdolgozatminta2015\szakdolgozat_minta\dolg
+ozat.aux
+(D:\Allamvizsga\DeepNeuralNetwork\szakdolgozatminta2015\szakdolgozat_minta\intr
+o.aux)
+(D:\Allamvizsga\DeepNeuralNetwork\szakdolgozatminta2015\szakdolgozat_minta\road
+Signs.aux
 
 LaTeX Warning: Label `fig:trainingImage' multiply defined.
 
-) (D:\szakdolgozatminta2015\szakdolgozat_minta\segmentation.aux)
-(D:\szakdolgozatminta2015\szakdolgozat_minta\preprocessing.aux)
-(D:\szakdolgozatminta2015\szakdolgozat_minta\neuralnet.aux
+)
+(D:\Allamvizsga\DeepNeuralNetwork\szakdolgozatminta2015\szakdolgozat_minta\segm
+entation.aux)
+(D:\Allamvizsga\DeepNeuralNetwork\szakdolgozatminta2015\szakdolgozat_minta\prep
+rocessing.aux)
+(D:\Allamvizsga\DeepNeuralNetwork\szakdolgozatminta2015\szakdolgozat_minta\neur
+alnet.aux
 
 LaTeX Warning: Label `ch:INTRO' multiply defined.
 
-) (D:\szakdolgozatminta2015\szakdolgozat_minta\programok.aux))
+)
+
+! Package natbib Error: Bibliography not compatible with author-year citations.
+
+(natbib)                Press <return> to continue in numerical citation style.
+
+
+See the natbib package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28 ...mand\NAT@force@numbers{}\NAT@force@numbers
+                                                  
+Check the bibliography entries for non-compliant syntax,
+or select author-year BibTeX style, e.g. plainnat
+
+)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 73.
 LaTeX Font Info:    ... okay on input line 73.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 73.
@@ -866,8 +893,7 @@ LaTeX Font Info:    ... okay on input line 73.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 73.
 LaTeX Font Info:    ... okay on input line 73.
 LaTeX Font Info:    Try loading font information for T1+ptm on input line 73.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\t1ptm.fd"
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\t1ptm.fd"
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
 ABD: EveryShipout initializing macros
@@ -900,8 +926,10 @@ LaTeX Info: Redefining \ref on input line 73.
 LaTeX Info: Redefining \pageref on input line 73.
 LaTeX Info: Redefining \nameref on input line 73.
 
-(D:\szakdolgozatminta2015\szakdolgozat_minta\dolgozat.out)
-(D:\szakdolgozatminta2015\szakdolgozat_minta\dolgozat.out)
+(D:\Allamvizsga\DeepNeuralNetwork\szakdolgozatminta2015\szakdolgozat_minta\dolg
+ozat.out)
+(D:\Allamvizsga\DeepNeuralNetwork\szakdolgozatminta2015\szakdolgozat_minta\dolg
+ozat.out)
 \@outlinefile=\write4
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 76.
@@ -931,21 +959,24 @@ been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.92 
-      [1 <D:/szakdolgozatminta2015/szakdolgozat_minta/logo_ubb.pdf>]
+      [1 <D:/Allamvizsga/DeepNeuralNetwork/szakdolgozatminta2015/szakdolgozat_m
+inta/logo_ubb.pdf>]
 Overfull \hbox (2.73601pt too wide) in paragraph at lines 92--92
 []  []
  []
 
-[2 <D:/szakdolgozatminta2015/szakdolgozat_minta/logo_ubb.pdf>]
+[2 <D:/Allamvizsga/DeepNeuralNetwork/szakdolgozatminta2015/szakdolgozat_minta/l
+ogo_ubb.pdf>]
 Overfull \hbox (2.73601pt too wide) in paragraph at lines 92--92
 []  []
  []
 
-[3 <D:/szakdolgozatminta2015/szakdolgozat_minta/logo_ubb.pdf>]
-(D:\szakdolgozatminta2015\szakdolgozat_minta\dolgozat.toc
+[3 <D:/Allamvizsga/DeepNeuralNetwork/szakdolgozatminta2015/szakdolgozat_minta/l
+ogo_ubb.pdf>]
+(D:\Allamvizsga\DeepNeuralNetwork\szakdolgozatminta2015\szakdolgozat_minta\dolg
+ozat.toc
 LaTeX Font Info:    Try loading font information for U+msa on input line 1.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 1.
@@ -967,7 +998,8 @@ l.106 \include{intro}
                       [2
 
 ]
-(D:\szakdolgozatminta2015\szakdolgozat_minta\intro.tex
+(D:\Allamvizsga\DeepNeuralNetwork\szakdolgozatminta2015\szakdolgozat_minta\intr
+o.tex
 1. fejezet
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 6.
@@ -980,131 +1012,118 @@ l.106 \include{intro}
 
 
 ]
-(D:\szakdolgozatminta2015\szakdolgozat_minta\roadSigns.tex
+(D:\Allamvizsga\DeepNeuralNetwork\szakdolgozatminta2015\szakdolgozat_minta\road
+Signs.tex
 2. fejezet
-<trainingImage.jpg, id=161, 36.135pt x 35.38219pt>
+<trainingImage.jpg, id=156, 36.135pt x 35.38219pt>
 File: trainingImage.jpg Graphic file (type jpg)
  <use trainingImage.jpg>
-Package pdftex.def Info: trainingImage.jpg used on input line 37.
+Package pdftex.def Info: trainingImage.jpg used on input line 38.
 (pdftex.def)             Requested size: 36.13489pt x 35.3821pt.
 
-<trainingImage2.jpg, id=162, 28.60687pt x 27.10126pt>
+<trainingImage2.jpg, id=157, 28.60687pt x 27.10126pt>
 File: trainingImage2.jpg Graphic file (type jpg)
  <use trainingImage2.jpg>
-Package pdftex.def Info: trainingImage2.jpg used on input line 38.
+Package pdftex.def Info: trainingImage2.jpg used on input line 39.
 (pdftex.def)             Requested size: 28.6068pt x 27.10118pt.
 
-<testImage.jpg, id=163, 1023.825pt x 602.25pt>
+<testImage.jpg, id=159, 1023.825pt x 602.25pt>
 File: testImage.jpg Graphic file (type jpg)
  <use testImage.jpg>
-Package pdftex.def Info: testImage.jpg used on input line 51.
+Package pdftex.def Info: testImage.jpg used on input line 52.
 (pdftex.def)             Requested size: 409.52274pt x 240.89572pt.
  [4
 
 
 
 ])
-[5 <D:/szakdolgozatminta2015/szakdolgozat_minta/trainingImage.jpg> <D:/szakdolg
-ozatminta2015/szakdolgozat_minta/trainingImage2.jpg> <D:/szakdolgozatminta2015/
-szakdolgozat_minta/testImage.jpg>]
-(D:\szakdolgozatminta2015\szakdolgozat_minta\segmentation.tex
+[5 <D:/Allamvizsga/DeepNeuralNetwork/szakdolgozatminta2015/szakdolgozat_minta/t
+rainingImage.jpg> <D:/Allamvizsga/DeepNeuralNetwork/szakdolgozatminta2015/szakd
+olgozat_minta/trainingImage2.jpg> <D:/Allamvizsga/DeepNeuralNetwork/szakdolgoza
+tminta2015/szakdolgozat_minta/testImage.jpg>]
+(D:\Allamvizsga\DeepNeuralNetwork\szakdolgozatminta2015\szakdolgozat_minta\segm
+entation.tex
 3. fejezet
 ) [6
 
 
 
-] (D:\szakdolgozatminta2015\szakdolgozat_minta\preprocessing.tex
+]
+(D:\Allamvizsga\DeepNeuralNetwork\szakdolgozatminta2015\szakdolgozat_minta\prep
+rocessing.tex
 4. fejezet
-<RGBColorSpace.jpg, id=179, 1606.0pt x 1204.5pt>
+<RGBColorSpace.jpg, id=175, 1606.0pt x 1204.5pt>
 File: RGBColorSpace.jpg Graphic file (type jpg)
  <use RGBColorSpace.jpg>
-Package pdftex.def Info: RGBColorSpace.jpg used on input line 19.
+Package pdftex.def Info: RGBColorSpace.jpg used on input line 20.
 (pdftex.def)             Requested size: 160.6094pt x 120.45705pt.
 
 [7
 
 
 
- <D:/szakdolgozatminta2015/szakdolgozat_minta/RGBColorSpace.jpg>]
-<HSVColorSpace.jpg, id=185, 1606.0pt x 1204.5pt>
+ <D:/Allamvizsga/DeepNeuralNetwork/szakdolgozatminta2015/szakdolgozat_minta/RGB
+ColorSpace.jpg>] <HSVColorSpace.jpg, id=181, 1606.0pt x 1204.5pt>
 File: HSVColorSpace.jpg Graphic file (type jpg)
- <use HSVColorSpace.jpg>
-Package pdftex.def Info: HSVColorSpace.jpg used on input line 32.
-(pdftex.def)             Requested size: 160.6094pt x 120.45705pt.
 
-<ColorWheel.jpg, id=187, 321.2pt x 320.19624pt>
+<use HSVColorSpace.jpg>
+Package pdftex.def Info: HSVColorSpace.jpg used on input line 33.
+(pdftex.def)             Requested size: 160.6094pt x 120.45705pt.
+ <ColorWheel.jpg, id=183, 321.2pt x 320.19624pt>
 File: ColorWheel.jpg Graphic file (type jpg)
- <use ColorWheel.jpg>
-Package pdftex.def Info: ColorWheel.jpg used on input line 47.
+
+<use ColorWheel.jpg>
+Package pdftex.def Info: ColorWheel.jpg used on input line 48.
 (pdftex.def)             Requested size: 160.59961pt x 160.09772pt.
-) [8 <D:/szakdolgozatminta2015/szakdolgozat_minta/HSVColorSpace.jpg> <D:/szakdo
-lgozatminta2015/szakdolgozat_minta/ColorWheel.jpg>]
-(D:\szakdolgozatminta2015\szakdolgozat_minta\neuralnet.tex
+) [8 <D:/Allamvizsga/DeepNeuralNetwork/szakdolgozatminta2015/szakdolgozat_minta
+/HSVColorSpace.jpg> <D:/Allamvizsga/DeepNeuralNetwork/szakdolgozatminta2015/sza
+kdolgozat_minta/ColorWheel.jpg>]
+(D:\Allamvizsga\DeepNeuralNetwork\szakdolgozatminta2015\szakdolgozat_minta\neur
+alnet.tex
 5. fejezet
 [9
 
 
 
-]) [10] (D:\szakdolgozatminta2015\szakdolgozat_minta\programok.tex
-A. f\"uggel\'ek
-("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
-File: lstlang1.sty 2014/09/06 1.5e listings language file
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang2.sty"
-File: lstlang2.sty 2014/09/06 1.5e listings language file
-)
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 9.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\t1pcr.fd"
-File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-)
-LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/pcr/b/n' tried instead on input line 12.
+] [10]) [11]
+(D:\Allamvizsga\DeepNeuralNetwork\szakdolgozatminta2015\szakdolgozat_minta\dolg
+ozat.bbl) [12
 
 
-Package natbib Warning: Citation `listingCite' on page 11 undefined on input li
-ne 12.
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 119.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 119.
 
-(D:\szakdolgozatminta2015\szakdolgozat_minta\progfiles/lolepes.pl
-LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <8> not available
-(Font)              Font shape `T1/pcr/b/n' tried instead on input line 3.
- [11
-
-
-
-]))
-[12]
-No file dolgozat.bbl.
-
-Package natbib Warning: There were undefined citations.
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 126.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 126.
-(D:\szakdolgozatminta2015\szakdolgozat_minta\dolgozat.aux
-(D:\szakdolgozatminta2015\szakdolgozat_minta\intro.aux)
-(D:\szakdolgozatminta2015\szakdolgozat_minta\roadSigns.aux)
-(D:\szakdolgozatminta2015\szakdolgozat_minta\segmentation.aux)
-(D:\szakdolgozatminta2015\szakdolgozat_minta\preprocessing.aux)
-(D:\szakdolgozatminta2015\szakdolgozat_minta\neuralnet.aux)
-(D:\szakdolgozatminta2015\szakdolgozat_minta\programok.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 126.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 126.
+(D:\Allamvizsga\DeepNeuralNetwork\szakdolgozatminta2015\szakdolgozat_minta\dolg
+ozat.aux
+(D:\Allamvizsga\DeepNeuralNetwork\szakdolgozatminta2015\szakdolgozat_minta\intr
+o.aux)
+(D:\Allamvizsga\DeepNeuralNetwork\szakdolgozatminta2015\szakdolgozat_minta\road
+Signs.aux)
+(D:\Allamvizsga\DeepNeuralNetwork\szakdolgozatminta2015\szakdolgozat_minta\segm
+entation.aux)
+(D:\Allamvizsga\DeepNeuralNetwork\szakdolgozatminta2015\szakdolgozat_minta\prep
+rocessing.aux)
+(D:\Allamvizsga\DeepNeuralNetwork\szakdolgozatminta2015\szakdolgozat_minta\neur
+alnet.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 119.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 119.
 Package rerunfilecheck Info: File `dolgozat.out' has not changed.
-(rerunfilecheck)             Checksum: 97C04CC33D9ABD32F70E13100330C858;2869.
+(rerunfilecheck)             Checksum: 000B038AFB149187BBA494F3A7933CCA;2661.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 126.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 119.
  ) 
 Here is how much of TeX's memory you used:
- 26355 strings out of 493921
- 479278 string characters out of 3147331
- 945020 words of memory out of 3000000
- 28950 multiletter control sequences out of 15000+200000
- 66437 words of font info for 82 fonts, out of 3000000 for 9000
+ 25779 strings out of 493921
+ 474417 string characters out of 3147331
+ 581020 words of memory out of 3000000
+ 28497 multiletter control sequences out of 15000+200000
+ 61698 words of font info for 71 fonts, out of 3000000 for 9000
  898 hyphenation exceptions out of 8191
- 55i,7n,69p,720b,1995s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 55i,7n,69p,720b,376s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program File
 s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX
  2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fon
@@ -1113,15 +1132,13 @@ public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
 sfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
 /cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pf
 b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Pro
-gram Files/MiKTeX 2.9/fonts/type1/urw/courier/ucrb8a.pfb><C:/Program Files/MiKT
-eX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
-pe1/urw/courier/ucrro8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvet
-ic/uhvb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8ac.pfb
-><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program File
-s/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb>
-Output written on dolgozat.pdf (15 pages, 4115915 bytes).
+gram Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files/MiK
+TeX 2.9/fonts/type1/urw/helvetic/uhvb8ac.pfb><C:/Program Files/MiKTeX 2.9/fonts
+/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/
+utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on dolgozat.pdf (15 pages, 4058557 bytes).
 PDF statistics:
- 415 PDF objects out of 1000 (max. 8388607)
- 149 named destinations out of 1000 (max. 500000)
- 234 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 296 PDF objects out of 1000 (max. 8388607)
+ 52 named destinations out of 1000 (max. 500000)
+ 226 words of extra memory for PDF output out of 10000 (max. 10000000)
 
