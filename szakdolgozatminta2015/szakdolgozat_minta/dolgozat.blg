@@ -4,5 +4,11 @@ A level-1 auxiliary file: roadSigns.aux
 A level-1 auxiliary file: segmentation.aux
 A level-1 auxiliary file: preprocessing.aux
 A level-1 auxiliary file: neuralnet.aux
-The style file: ieeetr.bst
+The style file: IEEEtranN.bst
 Database file #1: konyveszet.bib
+-- IEEEtranN.bst version 1.13 (2008/09/30) by Michael Shell.
+-- http://www.michaelshell.org/tex/ieeetran/bibtex/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+** Natbib version - not for normal IEEE work.
+
+Done.
