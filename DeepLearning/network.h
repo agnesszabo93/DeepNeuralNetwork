@@ -1,6 +1,13 @@
 #pragma once
 
 #include <vector>
+#include <algorithm>
+#include <math.h>
+#include <QDebug>
+#include <iostream>
+#include <fstream>
+#include <sys/stat.h>
+
 #include "matrix.h"
 #include "matrix3d.h"
 #include "dataset.h"
@@ -17,16 +24,18 @@ public:
     Matrix3D         _weights;
 
     Network(std::vector<int> sizes);
-    std::vector<double> sigmoid(std::vector<double> z);
-    std::vector<double> sigmoid_prime(std::vector<double> z);
-    std::vector<double> feedforward(std::vector<double> a);
-    void SGD(DataSet dataset,int epochs, int mini_batch_size, double eta);
+
+    Vector sigmoid(Vector z);
+    Vector sigmoid_prime(Vector z);
+    Vector feedforward(Vector a);
+    void SGD(DataSet dataset,int epochs, int mini_batch_size, double eta, DataSet testDataSet);
     void updateMiniBatch(double eta, DataSet mini_batch);
-    Nablas backprop(Data mini_batch_row);
-    std::vector<double> cost_derivative(std::vector<double> output_activations,std::vector<double> y);
-    std::vector<double> elementwiseProduct(std::vector<double> v1,std::vector<double> v2);
-    Matrix2D dot(std::vector<double> v1,std::vector<double> v2);
-    std::vector<double> dot(Matrix2D m,std::vector<double> v);
+    void backprop(/*Data mini_batch_row*/);
+    Vector cost_derivative(Vector output_activations,Vector y);
+    unsigned int evaluate(DataSet testDataSet);
+    //Vector elementwiseProduct(Vector v1,Vector v2);
+    Matrix2D dot(Vector v1,Vector v2);
+    Vector dot(Matrix2D m,Vector v);
 };
 
 

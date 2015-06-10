@@ -14,16 +14,22 @@ Vector::Vector(unsigned int count)
     _data.resize(_count);
 }
 
+Vector::~Vector()
+{
+    _data.clear();
+}
+
 void Vector::randInit()
 {
-    for(int i = 0; i<_count; i++){
-        _data[i] = (double)rand() /(101*30*RAND_MAX);
+    //qDebug() << "randinit 1d";
+    for(unsigned int i = 0; i<_count; i++){
+        _data[i] = (double)rand() / (3000*RAND_MAX);
     }
 }
 
 void Vector::zeros()
 {
-    for(int i = 0; i<_count; i++)
+    for(unsigned int i = 0; i<_count; i++)
         _data[i] = 0;
 }
 
@@ -42,28 +48,63 @@ double Vector::GetItem(unsigned int i)
     return _data[i];
 }
 
+double Vector::GetMax()
+{
+    double maxItem = *std::max_element(_data.begin(),_data.end());
+    double maxIndex =  std::distance(_data.begin(),std::max_element(_data.begin(),_data.end()));
+    _data[maxIndex] = 0;
+    double maxItem2 =  *std::max_element(_data.begin(),_data.end());
+    _data[maxIndex] = maxItem;
+    if (maxItem - maxItem2 < 0.2)
+        return 1000;
+    else
+        return maxIndex;
+}
+
 void Vector::SetData(std::vector<double> data)
 {
     _data = data;
 }
 
+void Vector::SetData(Vector v)
+{
+    _data = v.GetData();
+    _count = v.GetCount();
+}
+
+void Vector::SetItem(unsigned int i, double value)
+{
+    _data[i] = value;
+}
+
 void Vector::printData()
 {
-    qDebug() << "1d";
+    //qDebug() << "Print vector";
     for (unsigned int i = 0; i < _count; i++)
         qDebug() << _data[i];
 }
 
+void Vector::writeData(std::string name)
+{
+    std::ofstream ofs;
+    ofs.open (name.c_str(), std::ofstream::out | std::ofstream::app);
+
+    ofs << _count << std::endl;
+    for (unsigned int i = 0; i < _count; i++)
+        ofs << _data[i] << std::endl;
+
+    ofs.close();
+}
+
 Vector Vector::add(Vector v)
 {
+    if (_count != v.GetCount())
+        qDebug() << "Az osszeadando vektorok nem azonos meretuek.";
+
     Vector retV(v.GetCount());
-    std::vector<double> ret(v.GetCount());
-    for(unsigned int i = 0; i < v.GetCount(); i++){
-        ret[i] = v.GetItem(i) + _data[i];
-        if (ret[i] != ret[i])
-            ret[i] = 0;
+    for(unsigned int i = 0; i < _count; i++){
+        retV.SetItem(i,_data[i] + v.GetItem(i));
     }
-    retV.SetData(ret);
     return retV;
 
 }
@@ -71,27 +112,32 @@ Vector Vector::add(Vector v)
 Vector Vector::sub(Vector v)
 {
     if (_count != v.GetCount())
-        qDebug() <<" nem megfelelo meretek a vektorok kivonasanal!" << _count<<" "<<v.GetCount();
+        qDebug() << "A kivonando vektorok nem azonos meretuek.";
+
     Vector retV(v.GetCount());
-    std::vector<double> ret(v.GetCount());
-    for(unsigned int i = 0; i < v.GetCount(); i++){
-        ret[i] = _data[i] - v.GetItem(i);
-        if (ret[i] != ret[i])
-            ret[i] = 0;
+    for(unsigned int i = 0; i < _count; i++){
+        retV.SetItem(i,_data[i] - v.GetItem(i));
     }
-    retV.SetData(ret);
     return retV;
 }
 
 Vector Vector::multiplyByScalar(double s)
 {
     Vector retV(_count);
-    std::vector<double> ret(_count);
     for(unsigned int i = 0; i < _count; i++){
-        ret[i] = _data[i] * s;
-        if (ret[i] != ret[i])
-            ret[i] = 0;
+        retV.SetItem(i,_data[i] * s);
     }
-    retV.SetData(ret);
+    return retV;
+}
+
+Vector Vector::HadamardProd(Vector v)
+{
+    if (_count != v.GetCount())
+        qDebug() << "A szorzando(hadamard) vektorok nem azonos meretuek.";
+
+    Vector retV(v.GetCount());
+    for(unsigned int i = 0; i < _count; i++){
+        retV.SetItem(i,_data[i] * v.GetItem(i));
+    }
     return retV;
 }

@@ -22,10 +22,10 @@ unsigned int DataSet::GetDataCount()
     return _data_count;
 }
 
-void DataSet::LoadData()
+void DataSet::LoadData(unsigned int dim,QString parent_folder)
 {
     QStringList all_paths;
-    QString parent_folder = "D:/Egyetem/Allamvizsga/TestLearning";
+    //QString parent_folder = "D:/Egyetem/Allamvizsga/TestLearning";
     QDirIterator dirIt(parent_folder,QDirIterator::Subdirectories);
     while (dirIt.hasNext()) {
         dirIt.next();
@@ -34,10 +34,11 @@ void DataSet::LoadData()
     }
 
     _data_count = all_paths.size();
+    _data.resize(_data_count);
 
-    for (int i = 0; i<all_paths.size(); i++){
+    for (int i = 0; i<_data_count; i++){
         _data[i] = Data();
-        _data[i].LoadData(all_paths[i]);
+        _data[i].LoadData(all_paths[i],dim);
     }
 }
 

@@ -3,16 +3,20 @@
 #include <QString>
 #include <vector>
 
+#include "vector.h"
+
 class Data
 {
 protected:
-    std::vector<double> _imageData;
+    Vector _imageData;
     unsigned int _imageClass;
 public:
     Data();
-    Data(std::vector<double> imageData, unsigned int imageClass);
-    std::vector<double> GetImageData();
+    Data(Vector imageData, unsigned int imageClass);
+
+    Vector GetImageData();
     unsigned int GetImageClass();
-    void LoadData(QString path);
+
+    void LoadData(QString path,unsigned int dim);
 };
 

@@ -19,9 +19,11 @@ protected:
 public:
     DataSet();
     DataSet(std::vector<Data> data);
+
     std::vector<Data> GetData();
     unsigned int GetDataCount();
-    void LoadData();
+
+    void LoadData(unsigned int dim,QString parent_folder);
     std::vector<Data> Shuffle();
     std::vector<Data> GenerateMiniBatch(unsigned int startIndex, unsigned int batchSize);
 };

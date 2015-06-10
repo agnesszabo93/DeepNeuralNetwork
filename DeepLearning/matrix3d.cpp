@@ -16,9 +16,16 @@ Matrix3D::Matrix3D()
 
 }
 
+Matrix3D::~Matrix3D()
+{
+    _data.clear();
+}
+
 void Matrix3D::randInit()
 {
+    //qDebug() << "randinit 3d";
     for (int i = 0; i<_matrix2d_count;i++){
+        //qDebug() << i;
         _data[i].randInit();
     }
 }
@@ -40,16 +47,36 @@ std::vector<Matrix2D> Matrix3D::GetData() const
     return _data;
 }
 
+Matrix2D Matrix3D::GetMatrix2D(unsigned int i)
+{
+    return _data[i];
+}
+
 void Matrix3D::SetData(unsigned int i, Matrix2D m)
 {
     _data[i] = m;
 }
 
+//void SetItem(unsigned int i, unsigned int j, unsigned int k,double value)
+
 void Matrix3D::printData()
 {
-    qDebug() << "3d";
+    //qDebug() << "print matrix 3D";
     for (unsigned int i = 0; i < _matrix2d_count; i++)
         _data[i].printData();
+}
+
+void Matrix3D::writeData(std::string name)
+{
+    std::ofstream ofs;
+    ofs.open (name.c_str(), std::ofstream::out | std::ofstream::app);
+
+    ofs << _matrix2d_count << std::endl;
+
+    for (unsigned int i = 0; i < _matrix2d_count; i++)
+        _data[i].writeData(name);
+
+    ofs.close();
 }
 
 Matrix3D Matrix3D::add(Matrix3D m)

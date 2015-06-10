@@ -11,13 +11,22 @@ protected:
 public:
     Matrix3D(std::vector<int> sizes);
     Matrix3D();
+    ~Matrix3D();
+
     void randInit();
     void zeros();
+
     std::vector<Matrix2D> GetData() const;
-    void SetData(unsigned int i, Matrix2D m);
     unsigned int GetMatrix2DCount() const;
-    void printData();
+    Matrix2D GetMatrix2D(unsigned int i);
+
+    void SetData(unsigned int i, Matrix2D m);
+    //void SetItem(unsigned int i, unsigned int j, unsigned int k,double value);
+
     Matrix3D add(Matrix3D m);
     Matrix3D sub(Matrix3D m);
     Matrix3D multiplyByScalar(double s);
+
+    void printData();
+    void writeData(std::string name);
 };

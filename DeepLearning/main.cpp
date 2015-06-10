@@ -8,46 +8,30 @@ int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
     MainWindow w;
-    //w.show();
+    w.show();
     srand (time(NULL));
      qDebug() << "hello beautiful world!";
 
      std::vector<int> array(3);
      array[0] = 625;
-     array[1] = 30;
-     array[2] = 2;
+     array[1] = 10;
+     array[2] = 3;
 
      std::vector<int> array2(2);
-     array2[0] = 1;
-     array2[1] = 1;
-
-     /*std::vector<double> array3(2);
-
-     Network net(array);
-     net._weights.printData();
-
-     net._weights.GetData()[0].dot(array3);*/
+     array2[0] = 625;
+     array2[1] = 3;
 
      DataSet d = DataSet();
-     d.LoadData();
-     //d = DataSet(d.Shuffle());
+     QString path = "D:/Egyetem/Allamvizsga/TestLearning";
+     d.LoadData(25,path);
 
-     Network net(array);
+     DataSet d2 = DataSet();
+     QString path2 = "D:/Egyetem/Allamvizsga/Tests";
+     d2.LoadData(25,path2);
 
-     qDebug() <<"biases kesz";
-     net._biases.printData();
-     net.SGD(d,300,10,1.5);
-     qDebug() <<"tanulas kesz";
-     /*qDebug() <<"biases kesz";
-     net._biases.printData();
-
-     Data testData = Data();
-     testData.LoadData("D:/01/1.png");
-
-     std::vector<double> tv = net.feedforward(testData.GetImageData());
-     Vector tvv(tv.size());
-     tvv.SetData(tv);
-     tvv.printData();*/
+     Network net(array2);
+     net.SGD(d,300,10,0.6,d2);
+     qDebug() <<"kesz";
 /*     Network n = Network(array);
      qDebug() << "biases";
      n._biases.printData();

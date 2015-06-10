@@ -34,11 +34,16 @@ Matrix2D::Matrix2D(unsigned int row_count, unsigned int column_count)
         _data[i] = Vector(column_count);
 }
 
+Matrix2D::~Matrix2D()
+{
+    _data.clear();
+}
+
 void Matrix2D::randInit()
 {
+    //qDebug() << "randinit 2d";
     for(unsigned int i = 0; i<_row_count; i++)
         _data[i].randInit();
-    qDebug() << endl;
 }
 
 void Matrix2D::zeros()
@@ -72,31 +77,56 @@ double Matrix2D::getItem(unsigned int i, unsigned int j)
     return _data[i].GetItem(j);
 }
 
+Vector Matrix2D::GetVector(unsigned int i)
+{
+    return _data[i];
+}
+
 void Matrix2D::SetDataRow(unsigned int i, Vector v)
 {
     _data[i] = v;
 }
 
-//matrix szorzata egy oszlopvektorral
-std::vector<double> Matrix2D::dot(std::vector<double> v)
+void Matrix2D::SetItem(unsigned int i, unsigned int j, double value)
 {
-    if (v.size() != _column_count)
-        qDebug() << "Nem megfelelo meretek a szorzashoz!!!!" << _column_count <<"  "<<v.size();
-    std::vector<double> a(_row_count);
+    _data[i].SetItem(j,value);
+}
+
+//matrix szorzata egy oszlopvektorral
+Vector Matrix2D::dot(Vector v)
+{
+    if (v.GetCount() != _column_count)
+        qDebug() << "Nem megfelelo meretek a szorzashoz." << _column_count <<"  "<<v.GetCount();
+    Vector a(_row_count);
+    double value;
     for (unsigned int j = 0; j<_row_count; j++){
-        a[j] = 0;
+        value = 0;
         for (int i = 0; i<_column_count; i++){
-            a[j] += _data[j].GetData()[i]*v[i];
+            value += _data[j].GetData()[i]*v.GetItem(i);
         }
+        a.SetItem(j,value);
     }
     return a;
 }
 
 void Matrix2D::printData()
 {
-    qDebug() << "2d";
+    //qDebug() << "print matrix 2D";
     for (unsigned int i = 0; i < _vector_count; i++)
         _data[i].printData();
+}
+
+void Matrix2D::writeData(std::string name)
+{
+    std::ofstream ofs;
+    ofs.open (name.c_str(), std::ofstream::out | std::ofstream::app);
+
+    ofs << _vector_count << std::endl;
+
+    for (unsigned int i = 0; i < _vector_count; i++)
+        _data[i].writeData(name);
+
+    ofs.close();
 }
 
 Matrix2D Matrix2D::add(Matrix2D m)
