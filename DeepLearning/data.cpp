@@ -77,12 +77,15 @@ void Data::LoadData(QString path,unsigned int dim)
                 {
                     image->setPixel(i,j,0);
                 }
-                else if (c_max > 0.85)
-                    image->setPixel(i,j,qRgb(255, 255, 255));
-                else
+                else if (c_max <0.3)
                     image->setPixel(i,j,0);
+                else
+                    image->setPixel(i,j,qRgb(255, 255, 255));
             }
         }
+
+        //image->save(path);
+
 
         QImage scaledImage = image->scaled(dim,dim,Qt::IgnoreAspectRatio,Qt::FastTransformation);
         for(int i = 0;i< dim;i++)

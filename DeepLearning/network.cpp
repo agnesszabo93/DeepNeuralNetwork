@@ -73,6 +73,7 @@ void Network::SGD(DataSet dataset,int epochs, int mini_batch_size, double eta, D
             updateMiniBatch(eta,mini_batch);
         }
 
+        std::cout << j << " " << evaluate(testDataSet)<<std::endl;
         myfile << j << " " << evaluate(testDataSet) << std::endl;
     }
     myfile.close();
