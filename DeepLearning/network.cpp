@@ -60,11 +60,11 @@ unsigned int Network::evaluate(DataSet testDataSet)
 void Network::SGD(DataSet dataset,int epochs, int mini_batch_size, double eta, DataSet testDataSet)
 {
     std::ofstream myfile;
-    //myfile.open("learning_results.txt");
+    myfile.open("learning_results.txt");
 
     unsigned int n = dataset.GetDataCount();
 
-    //myfile << n << std::endl;
+    myfile << n << std::endl;
 
     for (unsigned int j = 0; j< epochs; j++){
         dataset.Shuffle();
@@ -73,9 +73,9 @@ void Network::SGD(DataSet dataset,int epochs, int mini_batch_size, double eta, D
             updateMiniBatch(eta,mini_batch);
         }
 
-        //myfile << j << " " << evaluate(testDataSet) << std::endl;
+        myfile << j << " " << evaluate(testDataSet) << std::endl;
     }
-    //myfile.close();
+    myfile.close();
 
     struct stat buffer;
     std::string name = "biases.txt";

@@ -23,7 +23,8 @@ int main(int argc, char *argv[])
      array2[1] = 3;
 
      DataSet d = DataSet();
-     QString path2 = "../../FullIJCNN2013/FullIJCNN2013/";
+     //QString path2 = "../../FullIJCNN2013/FullIJCNN2013/";
+     QString path2 = "../../TestLearning";
      d.LoadData(size,path2);
 
      std::cout<< "Learning started" <<std::endl;
