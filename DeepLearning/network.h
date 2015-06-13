@@ -3,7 +3,6 @@
 #include <vector>
 #include <algorithm>
 #include <math.h>
-#include <QDebug>
 #include <iostream>
 #include <fstream>
 #include <sys/stat.h>
@@ -30,10 +29,8 @@ public:
     Vector feedforward(Vector a);
     void SGD(DataSet dataset,int epochs, int mini_batch_size, double eta, DataSet testDataSet);
     void updateMiniBatch(double eta, DataSet mini_batch);
-    void backprop(/*Data mini_batch_row*/);
     Vector cost_derivative(Vector output_activations,Vector y);
     unsigned int evaluate(DataSet testDataSet);
-    //Vector elementwiseProduct(Vector v1,Vector v2);
     Matrix2D dot(Vector v1,Vector v2);
     Vector dot(Matrix2D m,Vector v);
 };

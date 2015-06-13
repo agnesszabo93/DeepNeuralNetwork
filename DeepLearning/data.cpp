@@ -65,21 +65,24 @@ void Data::LoadData(QString path,unsigned int dim)
                 else
                     L = D/c_max;
 
-                if ((((H >=0 && H <=20) ||  (H>=340)) && c_max >0.2 && L>0.3) || (c_max<=0.3))
+                if (((H >=0 && H <=20) ||  (H>=340)) && c_max >0.2 && L>0.3)
                 {
                     image->setPixel(i,j,0);
                 }
-                else
-                    image->setPixel(i,j,qRgb(255, 255, 255));
-                /*if (c_max<0.3)
+                else if ((H >=25 && H <=60) && c_max >0.2 && L>0.3)
+                {
                     image->setPixel(i,j,0);
+                }
+                else if ((H >=180 && H <=270) && c_max >0.2 && L>0.3)
+                {
+                    image->setPixel(i,j,0);
+                }
+                else if (c_max > 0.85)
+                    image->setPixel(i,j,qRgb(255, 255, 255));
                 else
-                    image->setPixel(i,j,qRgb(255, 255, 255));*/
+                    image->setPixel(i,j,0);
             }
         }
-
-        //image->save(path);
-
 
         QImage scaledImage = image->scaled(dim,dim,Qt::IgnoreAspectRatio,Qt::FastTransformation);
         for(int i = 0;i< dim;i++)

@@ -1,6 +1,7 @@
 #pragma once
 
 #include <vector>
+#include <iostream>
 #include "matrix.h"
 
 class Matrix3D
@@ -21,7 +22,6 @@ public:
     Matrix2D GetMatrix2D(unsigned int i);
 
     void SetData(unsigned int i, Matrix2D m);
-    //void SetItem(unsigned int i, unsigned int j, unsigned int k,double value);
 
     Matrix3D add(Matrix3D m);
     Matrix3D sub(Matrix3D m);

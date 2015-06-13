@@ -5,7 +5,6 @@
 #include <ctime>
 #include <cstdlib>
 #include <QDirIterator>
-#include <QDebug>
 
 #include "data.h"
 #include "matrix.h"

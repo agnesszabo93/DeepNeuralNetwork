@@ -1,6 +1,5 @@
 #include "matrix.h"
 #include <time.h>
-#include <QDebug>
 
 Matrix2D::Matrix2D()
 {
@@ -41,7 +40,6 @@ Matrix2D::~Matrix2D()
 
 void Matrix2D::randInit()
 {
-    //qDebug() << "randinit 2d";
     for(unsigned int i = 0; i<_row_count; i++)
         _data[i].randInit();
 }
@@ -96,7 +94,7 @@ void Matrix2D::SetItem(unsigned int i, unsigned int j, double value)
 Vector Matrix2D::dot(Vector v)
 {
     if (v.GetCount() != _column_count)
-        qDebug() << "Nem megfelelo meretek a szorzashoz." << _column_count <<"  "<<v.GetCount();
+        std::cout << "Nem megfelelo meretek a szorzashoz." << _column_count <<"  "<<v.GetCount() <<std::endl;
     Vector a(_row_count);
     double value;
     for (unsigned int j = 0; j<_row_count; j++){
@@ -111,7 +109,6 @@ Vector Matrix2D::dot(Vector v)
 
 void Matrix2D::printData()
 {
-    //qDebug() << "print matrix 2D";
     for (unsigned int i = 0; i < _vector_count; i++)
         _data[i].printData();
 }

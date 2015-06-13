@@ -11,10 +11,6 @@ Network::Network(std::vector<int> sizes)
 
     _weights = Matrix3D(_sizes);
     _weights.randInit();
-    //qDebug() << "biases";
-    //_biases.printData();
-    //qDebug() << "wights";
-    //_weights.printData();
 }
 
 Vector Network::sigmoid(Vector z)
@@ -41,7 +37,6 @@ Vector Network::feedforward(Vector a)
         Matrix2D w_i = _weights.GetMatrix2D(i);
         int s = _biases.GetVector(i).GetCount();
         Vector new_a(s);
-        //new_a = w_i.dot(a).add(_biases.GetVector(i));
         for (int j = 0; j< s; j++)
             new_a.SetItem(j, w_i.dot(a).GetItem(j) + _biases.GetData()[i].GetData()[j]);
         a = sigmoid(new_a);
@@ -64,17 +59,9 @@ unsigned int Network::evaluate(DataSet testDataSet)
 
 void Network::SGD(DataSet dataset,int epochs, int mini_batch_size, double eta, DataSet testDataSet)
 {
-    Data testData = Data();
-    testData.LoadData("D:/01/131.ppm",25);
-
-    Vector tv = feedforward(testData.GetImageData());
-    qDebug() <<"bla:";
-    tv.printData();
-
     std::ofstream myfile;
     //myfile.open("learning_results.txt");
 
-    //qDebug() << "img class"<<dataset.GetData()[1].GetImageClass();
     unsigned int n = dataset.GetDataCount();
 
     //myfile << n << std::endl;
@@ -82,20 +69,11 @@ void Network::SGD(DataSet dataset,int epochs, int mini_batch_size, double eta, D
     for (unsigned int j = 0; j< epochs; j++){
         dataset.Shuffle();
         for (int i = 0; i <= n-mini_batch_size; i+=mini_batch_size){
-            //qDebug() << "i"<<i;
             DataSet mini_batch = DataSet(dataset.GenerateMiniBatch(i,mini_batch_size));
-            //qDebug() << "img class"<<mini_batch.GetData()[1].GetImageClass();
-            //qDebug() <<"mini batch size" <<mini_batch.GetDataCount();
             updateMiniBatch(eta,mini_batch);
         }
 
         //myfile << j << " " << evaluate(testDataSet) << std::endl;
-
-        qDebug() << "epoch " <<j <<": " <<evaluate(testDataSet);
-
-        Vector tv = feedforward(testData.GetImageData());
-        qDebug() <<"bla:";
-        tv.printData();
     }
     //myfile.close();
 
@@ -118,13 +96,10 @@ void Network::SGD(DataSet dataset,int epochs, int mini_batch_size, double eta, D
 
 void Network::updateMiniBatch(double eta, DataSet mini_batch)
 {
-    //qDebug()<<"mini batchhh"<<mini_batch.GetDataCount();
-    //qDebug() <<"update mini batch";
     Matrix2D nabla_b(_sizes);
     nabla_b.zeros();
     Matrix3D nabla_w(_sizes);
     nabla_w.zeros();
-    //qDebug() <<"update mini batch init complet"<<mini_batch.GetDataCount();
     for(unsigned int i = 0; i < mini_batch.GetDataCount(); i++){
         Data mini_batch_row = mini_batch.GetData()[i];
 
@@ -170,10 +145,6 @@ void Network::updateMiniBatch(double eta, DataSet mini_batch)
         Nablas ns(nabla_b2,nabla_w2);
 
 
-
-
-
-        /*Nablas n =*/ //backprop(/*mini_batch_row*/);
         Matrix2D delta_nabla_b = ns._nabla_b;
         Matrix3D delta_nabla_w = ns._nabla_w;
         nabla_b = nabla_b.add(delta_nabla_b);
@@ -188,14 +159,6 @@ Vector Network::cost_derivative(Vector output_activations,Vector y)
     Vector delta = output_activations.sub(y);
     return delta;
 }
-
-/*Vector Network::elementwiseProduct(Vector v1,Vector v2)
-{
-    std::vector<double> prod(v1.size());
-    for(int i = 0; i<v1.size();i++)
-        prod[i] = v1[i] * v2[i];
-    return prod;
-}*/
 
 Matrix2D Network::dot(Vector v1,Vector v2)
 {
@@ -222,51 +185,4 @@ Vector Network::dot(Matrix2D m,Vector v)
         row.SetItem(i,value);
     }
     return row;
-}
-
-void Network::backprop(/*Data mini_batch_row*/)
-{
-    /*//qDebug() << "backprogation";
-    Matrix2D nabla_b(_sizes);
-    nabla_b.zeros();
-    Matrix3D nabla_w(_sizes);
-    nabla_w.zeros();
-
-    //qDebug() << "backprogation after first half of init";
-    Vector activation = mini_batch_row.GetImageData();
-    Matrix2D activations(_sizes,0);
-    activations.SetDataRow(0,activation);
-    Matrix2D zs(_sizes);
-
-    //qDebug() << "backprogation after second half of init" <<activation.size();
-    for(unsigned int i = 0; i< _biases.GetVectorCount(); i++){
-        Vector z(_biases.GetVector(i).GetCount());
-        z.SetData(_weights.GetMatrix2D(i).dot(activation).add(_biases.GetVector(i)));
-
-        zs.SetDataRow(i,z);
-        activation = sigmoid_prime(z);
-        activations.SetDataRow(i+1,activation);
-    }
-
-    Vector outActivation = activations.GetVector(activations.GetVectorCount()-1);
-    Vector preferedOutput(outActivation.GetCount());
-    preferedOutput.SetItem(mini_batch_row.GetImageClass()-1,1.0);
-
-    Vector delta = cost_derivative(outActivation,preferedOutput).HadamardProd(sigmoid(zs.GetVector(zs.GetVectorCount()-1)));
-
-    nabla_b.SetDataRow(nabla_b.GetVectorCount()-1,delta);
-
-    nabla_w.SetData(nabla_w.GetMatrix2DCount()-1,dot(delta,activations.GetVector(activations.GetVectorCount()-2)));
-
-    for (unsigned int i = 2; i<_num_layers; i++){
-        Vector z = zs.GetVector(zs.GetVectorCount()-i);
-        Vector spv = sigmoid_prime(z);
-        delta = dot(_weights.GetMatrix2D(_weights.GetMatrix2DCount()-i+1),delta).HadamardProd(spv);
-
-        nabla_b.SetDataRow(nabla_b.GetVectorCount()-i,delta);
-        nabla_w.SetData(nabla_w.GetMatrix2DCount()-i,dot(delta,activations.GetVector(activations.GetVectorCount()-i-1)));
-    }
-*/
-    //Nablas ns(nabla_b,nabla_w);
-    //return ns;
 }

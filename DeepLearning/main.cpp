@@ -1,49 +1,35 @@
 #include <QtGui/QApplication>
 #include "mainwindow.h"
 #include "network.h"
-#include <QDebug>
 #include <QDirIterator>
+#include <iostream>
 
 int main(int argc, char *argv[])
 {
-    QApplication a(argc, argv);
-    MainWindow w;
-    w.show();
+    //QApplication a(argc, argv);
+    //MainWindow w;
+    //w.show();
     srand (time(NULL));
-     qDebug() << "hello beautiful world!";
+
+     int size = 25;
 
      std::vector<int> array(3);
-     array[0] = 625;
+     array[0] = size*size;
      array[1] = 10;
      array[2] = 3;
 
      std::vector<int> array2(2);
-     array2[0] = 625;
+     array2[0] = size*size;
      array2[1] = 3;
 
      DataSet d = DataSet();
-     QString path = "D:/Egyetem/Allamvizsga/TestLearning";
-     d.LoadData(25,path);
+     QString path2 = "../../FullIJCNN2013/FullIJCNN2013/";
+     d.LoadData(size,path2);
 
-     DataSet d2 = DataSet();
-     QString path2 = "D:/Egyetem/Allamvizsga/Tests";
-     d2.LoadData(25,path2);
-
+     std::cout<< "Learning started" <<std::endl;
      Network net(array2);
-     net.SGD(d,300,10,0.6,d2);
-     qDebug() <<"kesz";
-/*     Network n = Network(array);
-     qDebug() << "biases";
-     n._biases.printData();
-     qDebug() << "weigths";
-     n._weights.printData();
-     std::vector<double> vee = n.feedforward(array2,0);
+     net.SGD(d,100,10,0.5,d);
+     std::cout<< "Learning finished" <<std::endl;
 
-     qDebug() << "feedforward eredmeny:";
-     for(int i =0;i<vee.size();i++)
-         qDebug() << vee[i];
-
-*/
-
-    return a.exec();
+    //return a.exec();
 }

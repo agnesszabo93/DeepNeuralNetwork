@@ -25,7 +25,6 @@ unsigned int DataSet::GetDataCount()
 void DataSet::LoadData(unsigned int dim,QString parent_folder)
 {
     QStringList all_paths;
-    //QString parent_folder = "D:/Egyetem/Allamvizsga/TestLearning";
     QDirIterator dirIt(parent_folder,QDirIterator::Subdirectories);
     while (dirIt.hasNext()) {
         dirIt.next();

@@ -1,5 +1,4 @@
 #include "matrix3d.h"
-#include <QDebug>
 
 Matrix3D::Matrix3D(std::vector<int> sizes)
 {
@@ -23,9 +22,7 @@ Matrix3D::~Matrix3D()
 
 void Matrix3D::randInit()
 {
-    //qDebug() << "randinit 3d";
     for (int i = 0; i<_matrix2d_count;i++){
-        //qDebug() << i;
         _data[i].randInit();
     }
 }
@@ -57,11 +54,9 @@ void Matrix3D::SetData(unsigned int i, Matrix2D m)
     _data[i] = m;
 }
 
-//void SetItem(unsigned int i, unsigned int j, unsigned int k,double value)
 
 void Matrix3D::printData()
 {
-    //qDebug() << "print matrix 3D";
     for (unsigned int i = 0; i < _matrix2d_count; i++)
         _data[i].printData();
 }

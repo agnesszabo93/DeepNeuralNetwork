@@ -21,7 +21,6 @@ Vector::~Vector()
 
 void Vector::randInit()
 {
-    //qDebug() << "randinit 1d";
     for(unsigned int i = 0; i<_count; i++){
         _data[i] = (double)rand() / (3000*RAND_MAX);
     }
@@ -79,9 +78,8 @@ void Vector::SetItem(unsigned int i, double value)
 
 void Vector::printData()
 {
-    //qDebug() << "Print vector";
     for (unsigned int i = 0; i < _count; i++)
-        qDebug() << _data[i];
+        std::cout << _data[i] <<endl;
 }
 
 void Vector::writeData(std::string name)
@@ -99,7 +97,7 @@ void Vector::writeData(std::string name)
 Vector Vector::add(Vector v)
 {
     if (_count != v.GetCount())
-        qDebug() << "Az osszeadando vektorok nem azonos meretuek.";
+        std::cout << "Az osszeadando vektorok nem azonos meretuek." <<endl;
 
     Vector retV(v.GetCount());
     for(unsigned int i = 0; i < _count; i++){
@@ -112,7 +110,7 @@ Vector Vector::add(Vector v)
 Vector Vector::sub(Vector v)
 {
     if (_count != v.GetCount())
-        qDebug() << "A kivonando vektorok nem azonos meretuek.";
+        std::cout << "A kivonando vektorok nem azonos meretuek." <<endl;
 
     Vector retV(v.GetCount());
     for(unsigned int i = 0; i < _count; i++){
@@ -133,7 +131,7 @@ Vector Vector::multiplyByScalar(double s)
 Vector Vector::HadamardProd(Vector v)
 {
     if (_count != v.GetCount())
-        qDebug() << "A szorzando(hadamard) vektorok nem azonos meretuek.";
+        std::cout << "A szorzando(hadamard) vektorok nem azonos meretuek." <<std::endl;
 
     Vector retV(v.GetCount());
     for(unsigned int i = 0; i < _count; i++){

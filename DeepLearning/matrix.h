@@ -1,7 +1,7 @@
 #pragma once
 
 #include <vector>
-
+#include <iostream>
 #include "vector.h"
 
 class Matrix2D
