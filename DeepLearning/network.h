@@ -22,6 +22,8 @@ public:
     Matrix2D         _biases;
     Matrix3D         _weights;
 
+    std::ofstream myfile;
+
     Network(std::vector<int> sizes);
 
     Vector sigmoid(Vector z);

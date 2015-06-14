@@ -1,4 +1,5 @@
 #include "network.h"
+//#include <QDebug>
 
 Network::Network(std::vector<int> sizes)
 {
@@ -59,7 +60,7 @@ unsigned int Network::evaluate(DataSet testDataSet)
 
 void Network::SGD(DataSet dataset,int epochs, int mini_batch_size, double eta, DataSet testDataSet)
 {
-    std::ofstream myfile;
+
     myfile.open("learning_results.txt");
 
     unsigned int n = dataset.GetDataCount();
@@ -73,7 +74,8 @@ void Network::SGD(DataSet dataset,int epochs, int mini_batch_size, double eta, D
             updateMiniBatch(eta,mini_batch);
         }
 
-        std::cout << j << " " << evaluate(testDataSet)<<std::endl;
+        std::cout << j << " " << evaluate(testDataSet) <<std::endl;
+        //qDebug() << j << " " << evaluate(testDataSet);
         myfile << j << " " << evaluate(testDataSet) << std::endl;
     }
     myfile.close();
@@ -130,6 +132,12 @@ void Network::updateMiniBatch(double eta, DataSet mini_batch)
         preferedOutput.SetItem(mini_batch_row.GetImageClass(),1.0);
 
         Vector delta = cost_derivative(outActivation,preferedOutput).HadamardProd(sigmoid_prime(zs.GetVector(zs.GetVectorCount()-1)));
+
+        if (i == mini_batch.GetDataCount()-1){
+            for(unsigned int ii = 0; ii < delta.GetCount(); ii++)
+                myfile << delta.GetItem(ii) << " ";
+            myfile << std::endl;
+        }
 
         nabla_b2.SetDataRow(nabla_b2.GetVectorCount()-1,delta);
 
