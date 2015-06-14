@@ -28,6 +28,9 @@
 \contentsline {chapter}{\numberline {8}A kimenet}{17}{chapter.8}
 \contentsline {chapter}{\numberline {9}El\IeC {\H o}zetes tesztel\IeC {\'e}s}{18}{chapter.9}
 \contentsline {chapter}{\numberline {10}Eredm\IeC {\'e}nyek}{19}{chapter.10}
-\contentsline {chapter}{\numberline {11}K\IeC {\"o}vetkeztet\IeC {\'e}sek}{20}{chapter.11}
-\contentsline {chapter}{\numberline {12}Tov\IeC {\'a}bbfejleszt\IeC {\'e}si lehet\IeC {\H o}s\IeC {\'e}gek}{21}{chapter.12}
-\contentsline {chapter}{\numberline {13}Fontosabb programk\IeC {\'o}dok list\IeC {\'a}ja}{22}{chapter.13}
+\contentsline {section}{\numberline {10.1}Tanul\IeC {\'a}si r\IeC {\'a}ta meghat\IeC {\'a}roz\IeC {\'a}sa}{19}{section.10.1}
+\contentsline {section}{\numberline {10.2}Batch m\IeC {\'e}ret\IeC {\'e}nek meghat\IeC {\'a}roz\IeC {\'a}sa}{20}{section.10.2}
+\contentsline {section}{\numberline {10.3}Ciklusok sz\IeC {\'a}m\IeC {\'a}nak meghat\IeC {\'a}roz\IeC {\'a}sa}{20}{section.10.3}
+\contentsline {chapter}{\numberline {11}K\IeC {\"o}vetkeztet\IeC {\'e}sek}{23}{chapter.11}
+\contentsline {chapter}{\numberline {12}Tov\IeC {\'a}bbfejleszt\IeC {\'e}si lehet\IeC {\H o}s\IeC {\'e}gek}{24}{chapter.12}
+\contentsline {chapter}{\numberline {13}Fontosabb programk\IeC {\'o}dok list\IeC {\'a}ja}{25}{chapter.13}
