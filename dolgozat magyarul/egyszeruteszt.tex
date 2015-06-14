@@ -1,0 +1,32 @@
+%!TEX root = minta_dolgozat.tex
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Előzetes tesztelés}\label{ch:easytest}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Le akartam ellenőrizni, hogy mennyire helyes és hatékony az általam kódolt tanítási program. Ehhez tanítási és teszt adatokat generáltam. 
+
+Két kategóriát hoztam létre: az egyik osztályban a képek felső része többnyire fekete volt és az alsó többnyire fekete, a másikban pedig fordítva. A  \ref{fig:simple1} és \ref{fig:simple2} ábrákon láthatóak példák a létrehozott képekre.
+
+A fekete oldalon a pixelek 20\%-os valószínűséggel fehérek, 80\% valószínűséggel fekete; a fehér oldalon a pixelek 20\%-os valószínűséggel feketék, 80\% valószínűséggel fehérek. A tesztelés lényege az volt, hogy a program felismerje, hogy a fentebb említett két kategóriát helyesen megkülönböztesse egymástól.
+
+A generált képek 16x16 pixelesek voltak.
+
+A neurális háló az összes hasonlóan létrehozott tesztelési képet megfelelően kategorizálta.
+
+\begin{figure}[h]
+\centering
+
+\includegraphics[scale=2]{images/simpleTests1}
+\caption{Példa első kategóriájú képekre}
+
+\label{fig:simple1}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+
+\includegraphics[scale=2]{images/simpleTests2}
+\caption{Példa második kategóriájú képekre}
+
+\label{fig:simple2}
+\end{figure}

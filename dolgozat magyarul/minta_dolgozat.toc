@@ -1,0 +1,33 @@
+\select@language {british}
+\contentsline {chapter}{\numberline {1}Bevezet\IeC {\H o}}{3}{chapter.1}
+\contentsline {section}{\numberline {1.1}C\IeC {\'e}l}{3}{section.1.1}
+\contentsline {section}{\numberline {1.2}Megval\IeC {\'o}s\IeC {\'\i }t\IeC {\'a}s}{3}{section.1.2}
+\contentsline {chapter}{\numberline {2}Eddigi eredm\IeC {\'e}nyek}{4}{chapter.2}
+\contentsline {section}{\numberline {2.1}Sz\IeC {\'\i }n \IeC {\'e}s formai jellemz\IeC {\H o}k kivon\IeC {\'a}s\IeC {\'a}val}{4}{section.2.1}
+\contentsline {chapter}{\numberline {3}Forgalmi t\IeC {\'a}bl\IeC {\'a}k}{5}{chapter.3}
+\contentsline {section}{\numberline {3.1}Mik a forgalmi t\IeC {\'a}bl\IeC {\'a}k?}{5}{section.3.1}
+\contentsline {section}{\numberline {3.2}Adathalmaz}{5}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Tanul\IeC {\'a}si adatok}{5}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Tesztel\IeC {\'e}si adatok}{6}{subsection.3.2.2}
+\contentsline {chapter}{\numberline {4}Darabol\IeC {\'a}s}{7}{chapter.4}
+\contentsline {chapter}{\numberline {5}K\IeC {\'e}pek el\IeC {\H o}feldolgoz\IeC {\'a}sa}{9}{chapter.5}
+\contentsline {section}{\numberline {5.1}Sz\IeC {\'\i }nterek}{9}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}RGB sz\IeC {\'\i }nt\IeC {\'e}r}{9}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}HSV sz\IeC {\'\i }nt\IeC {\'e}r}{10}{subsection.5.1.2}
+\contentsline {section}{\numberline {5.2}Megval\IeC {\'o}s\IeC {\'\i }t\IeC {\'a}s}{10}{section.5.2}
+\contentsline {section}{\numberline {5.3}\IeC {\'A}tm\IeC {\'e}retez\IeC {\'e}s}{11}{section.5.3}
+\contentsline {chapter}{\numberline {6}Neur\IeC {\'a}lis h\IeC {\'a}l\IeC {\'o}k}{12}{chapter.6}
+\contentsline {section}{\numberline {6.1}Bevezet\IeC {\H o}}{12}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Biol\IeC {\'o}giai modell}{12}{subsection.6.1.1}
+\contentsline {section}{\numberline {6.2}Mesters\IeC {\'e}ges neuronok}{12}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Szigmoid neuron}{12}{subsection.6.2.1}
+\contentsline {section}{\numberline {6.3}Szerkezek}{14}{section.6.3}
+\contentsline {section}{\numberline {6.4}Sztochasztikus gradiens cs\IeC {\"o}kkent\IeC {\'e}s}{14}{section.6.4}
+\contentsline {section}{\numberline {6.5}Backpropagation}{15}{section.6.5}
+\contentsline {chapter}{\numberline {7}Az algoritmus}{16}{chapter.7}
+\contentsline {chapter}{\numberline {8}A kimenet}{17}{chapter.8}
+\contentsline {chapter}{\numberline {9}El\IeC {\H o}zetes tesztel\IeC {\'e}s}{18}{chapter.9}
+\contentsline {chapter}{\numberline {10}Eredm\IeC {\'e}nyek}{19}{chapter.10}
+\contentsline {chapter}{\numberline {11}K\IeC {\"o}vetkeztet\IeC {\'e}sek}{20}{chapter.11}
+\contentsline {chapter}{\numberline {12}Tov\IeC {\'a}bbfejleszt\IeC {\'e}si lehet\IeC {\H o}s\IeC {\'e}gek}{21}{chapter.12}
+\contentsline {chapter}{\numberline {13}Fontosabb programk\IeC {\'o}dok list\IeC {\'a}ja}{22}{chapter.13}

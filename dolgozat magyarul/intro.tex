@@ -1,0 +1,19 @@
+%!TEX root = minta_dolgozat.tex
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Bevezető}\label{ch:INTRO}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Cél}\label{sec:INTRO:goal}
+Számos olyan rendszer létezik ami megtalál és felismer forgalmi táblákat valós környezetből vett képeken, de a robusztus és költséghatékony megoldás mai napig aktív kutatási téma. Mivel több különböző típusú forgalmi tábla létezik és ezek között sok a hasonlóság, a megkülönböztetésük kihívásnak bizonyul. A táblák felismerhetőségét befolyásolja több tényező, mint a fényerősség, árnyékolás, parciális fedés és egyéb akadályok.
+
+Egyes autóvezetők számára nehézséget jelenthet a figyelmük megosztása, ami bizonytalansághoz, balesethez vezethet. Ha rendelkezésükre állna egy rendszer, ami képes figyelmeztetni őket a forgalmi táblákról és az általuk megszabott korlátról vagy információról, magabiztosabbá válhatnának.
+
+A célom egy gyors, hatékony és megbízható rendszert készítése.
+
+\section{Megvalósítás}\label{sec:INTRO:implement}
+
+A rendszer a gépi tanulás segítségével ismeri fel a forgalmi táblákat. Ezen belül neurális hálókat használtam.
+
+Amikor egy alkalmazás valós környezetbe kerül, fontos, hogy megbízható legyen. Egy tábla hibás azonosítása végzetes következményekkel járhat.
+
+Mivel a forgalmi táblák idővel változhatnak, lényeges szempont, hogy a tervezett rendszer könnyen alkalmazkodjon a változásokhoz, anélkül, hogy nagy mértékben módosítani kelljen azt. A neurális hálók tökéletesek erre a feladatra, hiszen ha az adatok változnak is, elég a tanulási folyamatot megismételni; nincs szükség a kód módosítására.

@@ -1,0 +1,125 @@
+% BEÁLLÍTÁSOK - JOBB NEM VÁLTOZTATNI
+
+\documentclass[final]{ubb_dolgozat}
+\usepackage{definitions}
+\usepackage{pdfpages}
+\usepackage{listings}
+
+\newcommand{\pdf}[1]{pythonCodes/#1.pdf}
+%%
+
+
+% milyen nyelveken akarunk forr�sk�dot megjelen�teni
+\lstloadlanguages{C, C++, Python}
+
+% ezt be lehet tenni MINDEGYIK megjelen�tend� k�d el�.
+\lstset{language=C++}
+
+
+%% MELYIK �VBEN ADJUK LE
+\submityear{%
+2015
+}
+%% MELYIK H�NAPBAN ADJUK LE
+\submitmonthHU{%
+J\'ulius
+}
+\submitmonthRO{%
+Iulie
+}
+\submitmonthEN{%
+July
+}
+
+\titleHU{%
+Forgalmi táblák felismerése
+}
+\titleEN{%
+Road sign recognition
+}
+
+\titleRO{%
+Recunoa\c{s}terea semnelor de circula\c{t}ie
+}
+
+\author{%
+Szab\'o \'Agnes-Ter\'ez
+}
+
+%%
+\tutorHU{%
+Csató Lehel\\
+ {\large Babe\c{s}--Bolyai Tudományegyetem,\\
+ Matematika és Informatika Kar}
+}
+
+%%
+\tutorRO{%
+Csató Lehel\\
+ {\large Universitatea Babe\c{s}--Bolyai,\\
+ Facultatea de Matematic\u{a} \c{s}i Informatic\u{a} }%
+}
+%%
+\tutorEN{%
+Csató Lehel
+ {\large Babe\c{s}--Bolyai University,\\
+ Faculty of Mathematics and Informatics}
+}
+
+
+%\includeonly{bevezet}
+
+
+\begin{document}
+
+%% ABSTRAKT
+\begin{abstractEN} % ANGOL VÁLTOZAT
+
+\vfill
+There are numerous methods for road sign recognition but the rubust and cost-effective solution is still an active research subject. The recognisability of traffic signs is affected by many variables, like luminous intensity, shading, partial coverage and other obstacles. The developed system is recognising road sings using machine learning techniques taking in consideration the above mentioned factors. The most imoprtant is accuracy and speed. The application displays the examined image and analyses it on more background threads. Extracts random rectangles from the original picture and decides if it contains a traffic sign or not, and if it does categorises it. In case of a hit saves the coordinates and enframes it on the picture.
+
+This work is the result of my own activity. I have neither given nor received unauthorized assistance on this work.
+
+\vfill
+
+\end{abstractEN}
+
+
+% ez a címoldal része
+\maketitle
+%% 
+
+% a dolgozat tartalomjegyzéke -- ez automatikusan generálódik a STRUKTÚRA alapján.
+{ \baselineskip 1ex
+  \parskip 1ex
+  \tableofcontents
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%         a dolgozat tartalma         %%%%%%%%%%%%
+
+
+
+% a bevezető fejezet FILE-ja.
+\include{intro}
+\include{eddigieredmenyek}
+\include{roadSigns}
+\include{segmentation}
+\include{preprocessing}
+\include{neuralnet}
+\include{output}
+\include{egyszeruteszt}
+\include{eredmenyek}
+\include{kovetkeztetesek}
+\include{tovabb}
+\include{programs}
+
+{
+\bibliography{konyveszet}
+\bibliographystyle{IEEEtranN}
+\nocite{*}
+}
+
+
+\end{document}
