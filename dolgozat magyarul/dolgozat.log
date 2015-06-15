@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.3.6)  14 JUN 2015 17:02
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.3.6)  15 JUN 2015 09:16
 entering extended mode
 **dolgozat.tex
-(C:\Users\√Ågikussz\Desktop\allamvizsga\dolgozat.tex
+("D:\Allamvizsga\DeepNeuralNetwork\dolgozat magyarul\dolgozat.tex"
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -13,7 +13,7 @@ german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
 ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
 an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
 ishmax, welsh, loaded.
-(C:\Users\√Ågikussz\Desktop\allamvizsga\ubb_dolgozat.cls
+("D:\Allamvizsga\DeepNeuralNetwork\dolgozat magyarul\ubb_dolgozat.cls"
 Document Class: ubb_dolgozat 2009/11/28 v1.0 Babes-Bolyai Egyetem stilus-file.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\basiclayer\pgf.sty"
 ("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\utilities\pgfrcs.sty"
@@ -288,7 +288,7 @@ File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen141
 )
-(C:\Users\√Ågikussz\Desktop\allamvizsga\definitions.sty
+("D:\Allamvizsga\DeepNeuralNetwork\dolgozat magyarul\definitions.sty"
 ("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.sty"
 Package: babel 2008/07/08 v3.8m The Babel package
 
@@ -298,17 +298,17 @@ Package: babel 2008/07/08 v3.8m The Babel package
 ("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\bblopts.cfg"
 File: bblopts.cfg 2006/07/31 v1.0 MiKTeX 'babel' configuration
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\babel\english.ldf"
-Language: english 2005/03/30 v3.3o English support from the babel system
+("D:\Allamvizsga\DeepNeuralNetwork\dolgozat magyarul\magyar.ldf"
+Language: magyar 2007/10/19 v1.5 Magyar support from the babel v3.7 system
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.def"
 File: babel.def 2008/07/08 v3.8m Babel common definitions
 \babel@savecnt=\count98
 \U@D=\dimen142
 )
-\l@canadian = a dialect from \language\l@american 
-\l@australian = a dialect from \language\l@british 
-\l@newzealand = a dialect from \language\l@british 
+Package babel Info: Making ` an active character on input line 2732.
+\c@footnote@add=\count99
+\c@footnote@ch=\count100
 ))
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1enc.sty"
 Package: t1enc 1994/06/01 Standard LaTeX package
@@ -572,8 +572,8 @@ Package tocloft Info: The document has chapter divisions on input line 44.
 \cftbeforefigskip=\skip69
 \cftfigindent=\skip70
 \cftfignumwidth=\skip71
-\c@lofdepth=\count99
-\c@lotdepth=\count100
+\c@lofdepth=\count101
+\c@lotdepth=\count102
 \cftbeforelottitleskip=\skip72
 \cftafterlottitleskip=\skip73
 \cftbeforetabskip=\skip74
@@ -601,7 +601,7 @@ Package: tikz 2013/12/13 v3.0.0 (rcs-revision 1.142)
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\libraries\pgflibraryplothandlers.
 code.tex"
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.0 (rcs-revision 1.20)
-\pgf@plot@mark@count=\count101
+\pgf@plot@mark@count=\count103
 \pgfplotmarksize=\dimen145
 )
 \tikz@lastx=\dimen146
@@ -614,18 +614,18 @@ File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.0 (rcs-revision 1.20)
 \tikz@figbox@bg=\box34
 \tikz@tempbox=\box35
 \tikz@tempbox@bg=\box36
-\tikztreelevel=\count102
-\tikznumberofchildren=\count103
-\tikznumberofcurrentchild=\count104
-\tikz@fig@count=\count105
+\tikztreelevel=\count104
+\tikznumberofchildren=\count105
+\tikznumberofcurrentchild=\count106
+\tikz@fig@count=\count107
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\modules\pgfmodulematrix.code.tex"
 File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
-\pgfmatrixcurrentrow=\count106
-\pgfmatrixcurrentcolumn=\count107
-\pgf@matrix@numberofcolumns=\count108
+\pgfmatrixcurrentrow=\count108
+\pgfmatrixcurrentcolumn=\count109
+\pgf@matrix@numberofcolumns=\count110
 )
-\tikz@expandcount=\count109
+\tikz@expandcount=\count111
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikz
 librarytopaths.code.tex"
@@ -715,23 +715,23 @@ librarycalc.code.tex"
 File: tikzlibrarycalc.code.tex 2013/07/15 v3.0.0 (rcs-revision 1.9)
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.sty"
-\lst@mode=\count110
+\lst@mode=\count112
 \lst@gtempboxa=\box57
 \lst@token=\toks29
-\lst@length=\count111
+\lst@length=\count113
 \lst@currlwidth=\dimen153
-\lst@column=\count112
-\lst@pos=\count113
+\lst@column=\count114
+\lst@pos=\count115
 \lst@lostspace=\dimen154
 \lst@width=\dimen155
-\lst@newlines=\count114
-\lst@lineno=\count115
+\lst@newlines=\count116
+\lst@lineno=\count117
 \lst@maxwidth=\dimen156
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
 File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
-\c@lstnumber=\count116
-\lst@skipnumbers=\count117
+\c@lstnumber=\count118
+\lst@skipnumbers=\count119
 \lst@framebox=\box58
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.cfg"
@@ -759,13 +759,13 @@ Package: amsbsy 1999/11/29 v1.2d
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
 Package: amsopn 1999/12/14 v2.01 operator names
 )
-\inf@bad=\count118
+\inf@bad=\count120
 LaTeX Info: Redefining \frac on input line 210.
-\uproot@=\count119
-\leftroot@=\count120
+\uproot@=\count121
+\leftroot@=\count122
 LaTeX Info: Redefining \overline on input line 306.
-\classnum@=\count121
-\DOTSCASE@=\count122
+\classnum@=\count123
+\DOTSCASE@=\count124
 LaTeX Info: Redefining \ldots on input line 378.
 LaTeX Info: Redefining \dots on input line 381.
 LaTeX Info: Redefining \cdots on input line 466.
@@ -774,15 +774,15 @@ LaTeX Info: Redefining \cdots on input line 466.
 \big@size=\dimen159
 LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
-\macc@depth=\count123
-\c@MaxMatrixCols=\count124
+\macc@depth=\count125
+\c@MaxMatrixCols=\count126
 \dotsspace@=\muskip10
-\c@parentequation=\count125
-\dspbrk@lvl=\count126
+\c@parentequation=\count127
+\dspbrk@lvl=\count128
 \tag@help=\toks31
-\row@=\count127
-\column@=\count128
-\maxfields@=\count129
+\row@=\count129
+\column@=\count130
+\maxfields@=\count131
 \andhelp@=\toks32
 \eqnshift@=\dimen160
 \alignsep@=\dimen161
@@ -823,14 +823,14 @@ LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\tools\multicol.sty"
 Package: multicol 2011/06/27 v1.7a multicolumn formatting (FMi)
-\c@tracingmulticols=\count130
+\c@tracingmulticols=\count132
 \mult@box=\box61
 \multicol@leftmargin=\dimen168
-\c@unbalance=\count131
-\c@collectmore=\count132
-\doublecol@number=\count133
-\multicoltolerance=\count134
-\multicolpretolerance=\count135
+\c@unbalance=\count133
+\c@collectmore=\count134
+\doublecol@number=\count135
+\multicoltolerance=\count136
+\multicolpretolerance=\count137
 \full@width=\dimen169
 \page@free=\dimen170
 \premulticols=\dimen171
@@ -860,14 +860,14 @@ Package: multicol 2011/06/27 v1.7a multicolumn formatting (FMi)
 \@tempa=\box82
 \@tempa=\box83
 \@tempa=\box84
-\c@columnbadness=\count136
-\c@finalcolumnbadness=\count137
+\c@columnbadness=\count138
+\c@finalcolumnbadness=\count139
 \last@try=\dimen173
 \multicolovershoot=\dimen174
 \multicolundershoot=\dimen175
 \mult@nat@firstbox=\box85
 \colbreak@box=\box86
-\multicol@sort@counter=\count138
+\multicol@sort@counter=\count140
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\setspace\setspace.sty"
 Package: setspace 2011/12/19 v6.7a set line spacing
@@ -877,9 +877,9 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip84
 \bibsep=\skip85
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count139
+\c@NAT@ctr=\count141
 )
-(C:\Users\√Ågikussz\Desktop\allamvizsga\natbibspacing.sty
+("D:\Allamvizsga\DeepNeuralNetwork\dolgozat magyarul\natbibspacing.sty"
 \bibspacing=\dimen176
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
@@ -940,15 +940,15 @@ Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
 \@linkdim=\dimen177
-\Hy@linkcounter=\count140
-\Hy@pagecounter=\count141
+\Hy@linkcounter=\count142
+\Hy@pagecounter=\count143
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
 File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count142
+\Hy@SavedSpaceFactor=\count144
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -972,7 +972,7 @@ Package hyperref Info: Plain pages ON on input line 4456.
 Package hyperref Info: Backreferencing OFF on input line 4463.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4688.
-\c@Hy@tempcnt=\count143
+\c@Hy@tempcnt=\count145
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\url\url.sty"
 \Urlmuskip=\muskip11
@@ -980,7 +980,7 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5041.
 \XeTeXLinkMargin=\dimen178
-\Fld@menulength=\count144
+\Fld@menulength=\count146
 \Field@Width=\dimen179
 \Fld@charsize=\dimen180
 Package hyperref Info: Hyper figures OFF on input line 6295.
@@ -992,17 +992,17 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6320.
 Package hyperref Info: PDF/A mode OFF on input line 6325.
 LaTeX Info: Redefining \ref on input line 6365.
 LaTeX Info: Redefining \pageref on input line 6369.
-\Hy@abspage=\count145
-\c@Item=\count146
-\c@Hfootnote=\count147
+\Hy@abspage=\count147
+\c@Item=\count148
+\c@Hfootnote=\count149
 )
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def"
 File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
-\Fld@listcount=\count148
-\c@bookmark@seq@number=\count149
+\Fld@listcount=\count150
+\c@bookmark@seq@number=\count151
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
@@ -1026,7 +1026,7 @@ Package: amsthm 2004/08/06 v2.20
 \thm@headsep=\skip89
 \dth@everypar=\toks41
 )
-\c@tet=\count150
+\c@tet=\count152
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\pdfpages\pdfpages.sty"
 Package: pdfpages 2015/05/11 v0.4x Insert pages of external PDF documents (AM)
@@ -1036,15 +1036,15 @@ Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\tools\calc.sty"
 Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count151
-\calc@Bcount=\count152
+\calc@Acount=\count153
+\calc@Bcount=\count154
 \calc@Adimen=\dimen181
 \calc@Bdimen=\dimen182
 \calc@Askip=\skip90
 \calc@Bskip=\skip91
 LaTeX Info: Redefining \setlength on input line 76.
 LaTeX Info: Redefining \addtolength on input line 77.
-\calc@Ccount=\count153
+\calc@Ccount=\count155
 \calc@Cskip=\skip92
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\eso-pic\eso-pic.sty"
@@ -1058,7 +1058,7 @@ File: pppdftex.def 2015/05/11 v0.4x Pdfpages driver for pdfTeX (AM)
 )
 \AM@pagebox=\box87
 \AM@toc@title=\toks42
-\c@AM@survey=\count154
+\c@AM@survey=\count156
 \AM@templatesizebox=\box88
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
@@ -1067,25 +1067,24 @@ File: lstlang1.sty 2014/09/06 1.5e listings language file
 ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
 File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
 )
-(C:\Users\√Ågikussz\Desktop\allamvizsga\dolgozat.aux
-(C:\Users\√Ågikussz\Desktop\allamvizsga\intro.aux)
-(C:\Users\√Ågikussz\Desktop\allamvizsga\eddigieredmenyek.aux)
-(C:\Users\√Ågikussz\Desktop\allamvizsga\roadSigns.aux)
-(C:\Users\√Ågikussz\Desktop\allamvizsga\segmentation.aux)
-(C:\Users\√Ågikussz\Desktop\allamvizsga\preprocessing.aux)
-(C:\Users\√Ågikussz\Desktop\allamvizsga\neuralnet.aux
+("D:\Allamvizsga\DeepNeuralNetwork\dolgozat magyarul\dolgozat.aux"
+("D:\Allamvizsga\DeepNeuralNetwork\dolgozat magyarul\intro.aux")
+("D:\Allamvizsga\DeepNeuralNetwork\dolgozat magyarul\eddigieredmenyek.aux")
+("D:\Allamvizsga\DeepNeuralNetwork\dolgozat magyarul\roadSigns.aux")
+("D:\Allamvizsga\DeepNeuralNetwork\dolgozat magyarul\segmentation.aux")
+("D:\Allamvizsga\DeepNeuralNetwork\dolgozat magyarul\preprocessing.aux")
+("D:\Allamvizsga\DeepNeuralNetwork\dolgozat magyarul\neuralnet.aux"
 
 LaTeX Warning: Label `ch:INTRO' multiply defined.
 
-) (C:\Users\√Ågikussz\Desktop\allamvizsga\output.aux)
-(C:\Users\√Ågikussz\Desktop\allamvizsga\egyszeruteszt.aux)
-(C:\Users\√Ågikussz\Desktop\allamvizsga\eredmenyek.aux
+) ("D:\Allamvizsga\DeepNeuralNetwork\dolgozat magyarul\output.aux")
+("D:\Allamvizsga\DeepNeuralNetwork\dolgozat magyarul\egyszeruteszt.aux")
+("D:\Allamvizsga\DeepNeuralNetwork\dolgozat magyarul\eredmenyek.aux"
 
 LaTeX Warning: Label `ch:eredmenyek' multiply defined.
 
-) (C:\Users\√Ågikussz\Desktop\allamvizsga\kovetkeztetesek.aux)
-(C:\Users\√Ågikussz\Desktop\allamvizsga\tovabb.aux)
-(C:\Users\√Ågikussz\Desktop\allamvizsga\programs.aux))
+) ("D:\Allamvizsga\DeepNeuralNetwork\dolgozat magyarul\tovabb.aux")
+("D:\Allamvizsga\DeepNeuralNetwork\dolgozat magyarul\programs.aux"))
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 73.
 LaTeX Font Info:    ... okay on input line 73.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 73.
@@ -1110,19 +1109,19 @@ File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 ABD: EveryShipout initializing macros
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count155
+\scratchcounter=\count157
 \scratchdimen=\dimen185
 \scratchbox=\box89
-\nofMPsegments=\count156
-\nofMParguments=\count157
+\nofMPsegments=\count158
+\nofMParguments=\count159
 \everyMPshowfont=\toks43
-\MPscratchCnt=\count158
+\MPscratchCnt=\count160
 \MPscratchDim=\dimen186
-\MPnumerator=\count159
-\makeMPintoPDFobject=\count160
+\MPnumerator=\count161
+\makeMPintoPDFobject=\count162
 \everyMPtoPDFconversion=\toks44
 )
-\c@lstlisting=\count161
+\c@lstlisting=\count163
 \AtBeginShipoutBox=\box90
 Package hyperref Info: Link coloring ON on input line 73.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
@@ -1131,14 +1130,14 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count162
+\c@section@level=\count164
 )
 LaTeX Info: Redefining \ref on input line 73.
 LaTeX Info: Redefining \pageref on input line 73.
 LaTeX Info: Redefining \nameref on input line 73.
 
-(C:\Users\√Ågikussz\Desktop\allamvizsga\dolgozat.out)
-(C:\Users\√Ågikussz\Desktop\allamvizsga\dolgozat.out)
+("D:\Allamvizsga\DeepNeuralNetwork\dolgozat magyarul\dolgozat.out")
+("D:\Allamvizsga\DeepNeuralNetwork\dolgozat magyarul\dolgozat.out")
 \@outlinefile=\write4
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 76.
@@ -1168,29 +1167,29 @@ been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.91 
-      [1 <C:/Users/√Ågikussz/Desktop/allamvizsga/logo_ubb.pdf>]
+      [1 <D:/Allamvizsga/DeepNeuralNetwork/dolgozat magyarul/logo_ubb.pdf>]
 Overfull \hbox (2.73601pt too wide) in paragraph at lines 91--91
 []  []
  []
 
-[2 <C:/Users/√Ågikussz/Desktop/allamvizsga/logo_ubb.pdf>]
+[2 <D:/Allamvizsga/DeepNeuralNetwork/dolgozat magyarul/logo_ubb.pdf>]
 Overfull \hbox (2.73601pt too wide) in paragraph at lines 91--91
 []  []
  []
 
-[3 <C:/Users/√Ågikussz/Desktop/allamvizsga/logo_ubb.pdf>]
-(C:\Users\√Ågikussz\Desktop\allamvizsga\dolgozat.toc
-LaTeX Font Info:    Try loading font information for U+msa on input line 2.
+[3 <D:/Allamvizsga/DeepNeuralNetwork/dolgozat magyarul/logo_ubb.pdf>]
+("D:\Allamvizsga\DeepNeuralNetwork\dolgozat magyarul\dolgozat.toc"
+LaTeX Font Info:    Try loading font information for U+msa on input line 1.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 2.
+LaTeX Font Info:    Try loading font information for U+msb on input line 1.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+lasy on input line 2.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 1.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ulasy.fd"
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
@@ -1203,76 +1202,55 @@ been already used, duplicate ignored
 l.105 \include{intro}
                       [2
 
-] (C:\Users\√Ågikussz\Desktop\allamvizsga\intro.tex
-1. Chapter
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 6.
-
-Overfull \hbox (2.7426pt too wide) in paragraph at lines 7--8
-\T1/ptm/m/n/10.95 Sz·mos olyan rend-szer lÈtezik ami megtal·l Ès fel-is-mer for
--galmi t·bl·kat valÛs kˆrnyez-etbÆl vett kÈpeken,
- []
-
-
-Overfull \hbox (11.27159pt too wide) in paragraph at lines 15--16
-\T1/ptm/m/n/10.95 A rend-szer a gÈpi tan-ul·s segÌt-sÈgÈvel is-meri fel a for-g
-almi t·bl·kat. Ezen bel¸l neur·lis h·lÛkat haszn·ltam. 
- []
-
-)pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has
+]pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.105 \include{intro}
-                      [3
-
-
-]
-(C:\Users\√Ågikussz\Desktop\allamvizsga\eddigieredmenyek.tex
-2. Chapter
+                      [3]
+("D:\Allamvizsga\DeepNeuralNetwork\dolgozat magyarul\intro.tex"
+1. fejezet
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 6.
 ) [4
 
 
+] ("D:\Allamvizsga\DeepNeuralNetwork\dolgozat magyarul\eddigieredmenyek.tex"
+2. fejezet
+) [5
 
-] (C:\Users\√Ågikussz\Desktop\allamvizsga\roadSigns.tex
-3. Chapter
-<images/train.jpg, id=226, 166.37157pt x 39.14626pt>
+
+
+] ("D:\Allamvizsga\DeepNeuralNetwork\dolgozat magyarul\roadSigns.tex"
+3. fejezet
+<images/train.jpg, id=245, 166.37157pt x 39.14626pt>
 File: images/train.jpg Graphic file (type jpg)
  <use images/train.jpg>
 Package pdftex.def Info: images/train.jpg used on input line 35.
 (pdftex.def)             Requested size: 166.37114pt x 39.14615pt.
 
-[5
+[6
 
 
 
-] <testImage.jpg, id=239, 1023.825pt x 602.25pt>
+] <testImage.jpg, id=258, 1023.825pt x 602.25pt>
 File: testImage.jpg Graphic file (type jpg)
  <use testImage.jpg>
 Package pdftex.def Info: testImage.jpg used on input line 50.
 (pdftex.def)             Requested size: 409.52274pt x 240.89572pt.
 )
-[6 <C:/Users/√Ågikussz/Desktop/allamvizsga/images/train.jpg> <C:/Users/√Ågikuss
-z/Desktop/allamvizsga/testImage.jpg>]
-(C:\Users\√Ågikussz\Desktop\allamvizsga\segmentation.tex
-4. Chapter
-
-Overfull \hbox (2.15681pt too wide) in paragraph at lines 8--9
-[]\T1/ptm/m/n/10.95 Tˆbb k¸lˆn-bˆzÆ mÛd-szer lÈtezik a szeg-ment·l·s vÈ-gre-haj
-t·s·ra. Az ·ltalam al-kal-mazott vÈ-le-tlenszer∂
- []
-
-<images/testImage2.png, id=248, 1023.825pt x 602.25pt>
+[7 <D:/Allamvizsga/DeepNeuralNetwork/dolgozat magyarul/images/train.jpg> <D:/Al
+lamvizsga/DeepNeuralNetwork/dolgozat magyarul/testImage.jpg>]
+("D:\Allamvizsga\DeepNeuralNetwork\dolgozat magyarul\segmentation.tex"
+4. fejezet
+<images/testImage2.png, id=267, 1023.825pt x 602.25pt>
 File: images/testImage2.png Graphic file (type png)
 
 <use images/testImage2.png>
 Package pdftex.def Info: images/testImage2.png used on input line 17.
-(pdftex.def)             Requested size: 409.52274pt x 240.89572pt.
+(pdftex.def)             Requested size: 307.14987pt x 180.67639pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<images/segments.png, id=249, 472.76625pt x 90.3375pt>
+<images/segments.png, id=268, 472.76625pt x 90.3375pt>
 File: images/segments.png Graphic file (type png)
 
 <use images/segments.png>
@@ -1283,59 +1261,48 @@ Overfull \hbox (17.46388pt too wide) in paragraph at lines 30--31
  [][] 
  []
 
-) [7
+) [8
 
 
 
-] [8 <C:/Users/√Ågikussz/Desktop/allamvizsga/images/testImage2.png> <C:/Users/√
-Ågikussz/Desktop/allamvizsga/images/segments.png>]
-(C:\Users\√Ågikussz\Desktop\allamvizsga\preprocessing.tex
-5. Chapter
-<RGBColorSpace.jpg, id=263, 1606.0pt x 1204.5pt>
+ <D:/Allamvizsga/DeepNeuralNetwork/dolgozat magyarul/images/testImage2.png>] [9
+ <D:/Allamvizsga/DeepNeuralNetwork/dolgozat magyarul/images/segments.png>]
+("D:\Allamvizsga\DeepNeuralNetwork\dolgozat magyarul\preprocessing.tex"
+5. fejezet
+<RGBColorSpace.jpg, id=282, 1606.0pt x 1204.5pt>
 File: RGBColorSpace.jpg Graphic file (type jpg)
  <use RGBColorSpace.jpg>
 Package pdftex.def Info: RGBColorSpace.jpg used on input line 23.
 (pdftex.def)             Requested size: 160.6094pt x 120.45705pt.
 
-Overfull \hbox (3.74933pt too wide) in paragraph at lines 31--32
-\T1/ptm/m/n/10.95 EllentÈtben az RGB ·br·zol·s-sal, a HSV szÌntÈr henger-koordi
-n·t·kat al-kal-maz. Ez az egyik leggyakoribb
- []
-
-[9
+[10
 
 
 
- <C:/Users/√Ågikussz/Desktop/allamvizsga/RGBColorSpace.jpg>]
-<HSVColorSpace.jpg, id=270, 1606.0pt x 1204.5pt>
+ <D:/Allamvizsga/DeepNeuralNetwork/dolgozat magyarul/RGBColorSpace.jpg>]
+<HSVColorSpace.jpg, id=290, 1606.0pt x 1204.5pt>
 File: HSVColorSpace.jpg Graphic file (type jpg)
  <use HSVColorSpace.jpg>
 Package pdftex.def Info: HSVColorSpace.jpg used on input line 37.
 (pdftex.def)             Requested size: 160.6094pt x 120.45705pt.
 
-<ColorWheel.jpg, id=272, 321.2pt x 320.19624pt>
+<ColorWheel.jpg, id=292, 321.2pt x 320.19624pt>
 File: ColorWheel.jpg Graphic file (type jpg)
  <use ColorWheel.jpg>
 Package pdftex.def Info: ColorWheel.jpg used on input line 52.
 (pdftex.def)             Requested size: 160.59961pt x 160.09772pt.
-) [10 <C:/Users/√Ågikussz/Desktop/allamvizsga/HSVColorSpace.jpg> <C:/Users/√Ågi
-kussz/Desktop/allamvizsga/ColorWheel.jpg>] [11]
-(C:\Users\√Ågikussz\Desktop\allamvizsga\neuralnet.tex
-6. Chapter
-
-Overfull \hbox (7.95059pt too wide) in paragraph at lines 10--11
-[]\T1/ptm/m/n/10.95 Az em-beri ide-grend-szer nagyon kom-plex m∂ve-letek elvÈg-
-zÈsÈre kÈpes rˆvid idÆ al-att, en-nek analÛgj·ra
- []
-
-<images/idegsejt.jpg, id=286, 502.87875pt x 270.25969pt>
+) [11 <D:/Allamvizsga/DeepNeuralNetwork/dolgozat magyarul/HSVColorSpace.jpg> <D
+:/Allamvizsga/DeepNeuralNetwork/dolgozat magyarul/ColorWheel.jpg>] [12]
+("D:\Allamvizsga\DeepNeuralNetwork\dolgozat magyarul\neuralnet.tex"
+6. fejezet
+<images/idegsejt.jpg, id=305, 502.87875pt x 270.25969pt>
 File: images/idegsejt.jpg Graphic file (type jpg)
 
 <use images/idegsejt.jpg>
 Package pdftex.def Info: images/idegsejt.jpg used on input line 15.
 (pdftex.def)             Requested size: 251.43875pt x 135.1295pt.
 
-<images/neuron.png, id=287, 325.96782pt x 113.67468pt>
+<images/neuron.png, id=306, 325.96782pt x 113.67468pt>
 File: images/neuron.png Graphic file (type png)
  <use images/neuron.png>
 Package pdftex.def Info: images/neuron.png used on input line 31.
@@ -1344,18 +1311,18 @@ Package pdftex.def Info: images/neuron.png used on input line 31.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[12
+[13
 
 
 
- <C:/Users/√Ågikussz/Desktop/allamvizsga/images/idegsejt.jpg>]
-<images/sigmoidf.png, id=296, 258.9675pt x 113.67468pt>
+ <D:/Allamvizsga/DeepNeuralNetwork/dolgozat magyarul/images/idegsejt.jpg>]
+<images/sigmoidf.png, id=315, 258.9675pt x 113.67468pt>
 File: images/sigmoidf.png Graphic file (type png)
 
 <use images/sigmoidf.png>
 Package pdftex.def Info: images/sigmoidf.png used on input line 54.
 (pdftex.def)             Requested size: 258.96684pt x 113.6744pt.
- <images/net.png, id=297, 758.835pt x 444.15938pt>
+ <images/net.png, id=316, 758.835pt x 444.15938pt>
 File: images/net.png Graphic file (type png)
 
 <use images/net.png>
@@ -1365,70 +1332,87 @@ Package pdftex.def Info: images/net.png used on input line 65.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[13 <C:/Users/√Ågikussz/Desktop/allamvizsga/images/neuron.png> <C:/Users/√Ågiku
-ssz/Desktop/allamvizsga/images/sigmoidf.png>]
-Overfull \hbox (14.25099pt too wide) in paragraph at lines 80--81
-\T1/ptm/m/n/10.95 gvÈnyÈben tud-jam mÛ-dosÌtani, a sztochasztikus gradi-ens csˆ
-kkentÈst al-kal-maztam. Ez a gradi-ens csˆkkentÈs
- []
-
-
-Overfull \hbox (0.79327pt too wide) in paragraph at lines 80--81
-\T1/ptm/m/n/10.95 mÌg a sztochasztikus gradi-ens csˆkkentÈs kˆzelÌti a hi-b·t e
-gy bizonyos sz·m˙ vÈ-le-tlenszer-∂en kiv·lasztott
- []
-
-[14 <C:/Users/√Ågikussz/Desktop/allamvizsga/images/net.png>] [15]
-7. Chapter
-) [16
-
-] (C:\Users\√Ågikussz\Desktop\allamvizsga\output.tex
-8. Chapter
+[14 <D:/Allamvizsga/DeepNeuralNetwork/dolgozat magyarul/images/neuron.png> <D:/
+Allamvizsga/DeepNeuralNetwork/dolgozat magyarul/images/sigmoidf.png>] [15 <D:/A
+llamvizsga/DeepNeuralNetwork/dolgozat magyarul/images/net.png>] [16]
+7. fejezet
 ) [17
 
+] ("D:\Allamvizsga\DeepNeuralNetwork\dolgozat magyarul\output.tex"
+8. fejezet
+) [18
 
 
-] (C:\Users\√Ågikussz\Desktop\allamvizsga\egyszeruteszt.tex
-9. Chapter
-<images/simpleTests1.png, id=366, 94.10156pt x 13.55063pt>
+
+] ("D:\Allamvizsga\DeepNeuralNetwork\dolgozat magyarul\egyszeruteszt.tex"
+9. fejezet
+<images/simpleTests1.png, id=385, 94.10156pt x 13.55063pt>
 File: images/simpleTests1.png Graphic file (type png)
 
 <use images/simpleTests1.png>
 Package pdftex.def Info: images/simpleTests1.png used on input line 19.
 (pdftex.def)             Requested size: 188.20264pt x 27.10117pt.
 
-<images/simpleTests2.png, id=367, 85.06781pt x 14.30344pt>
+<images/simpleTests2.png, id=386, 85.06781pt x 14.30344pt>
 File: images/simpleTests2.png Graphic file (type png)
 
 <use images/simpleTests2.png>
 Package pdftex.def Info: images/simpleTests2.png used on input line 28.
 (pdftex.def)             Requested size: 170.1352pt x 28.60678pt.
-) [18
-
-
-
- <C:/Users/√Ågikussz/Desktop/allamvizsga/images/simpleTests1.png> <C:/Users/√Åg
-ikussz/Desktop/allamvizsga/images/simpleTests2.png>] (C:\Users\√Ågikussz\Deskto
-p\allamvizsga\eredmenyek.tex
-10. Chapter
 ) [19
 
 
 
-] (C:\Users\√Ågikussz\Desktop\allamvizsga\kovetkeztetesek.tex
-11. Chapter
-) [20
+ <D:/Allamvizsga/DeepNeuralNetwork/dolgozat magyarul/images/simpleTests1.png> <
+D:/Allamvizsga/DeepNeuralNetwork/dolgozat magyarul/images/simpleTests2.png>]
+("D:\Allamvizsga\DeepNeuralNetwork\dolgozat magyarul\eredmenyek.tex"
+10. fejezet
+<images/Teszt2.png, id=394, 423.08063pt x 317.68687pt>
+File: images/Teszt2.png Graphic file (type png)
+ <use images/Teszt2.png>
+Package pdftex.def Info: images/Teszt2.png used on input line 29.
+(pdftex.def)             Requested size: 211.5398pt x 158.84303pt.
+
+<images/Teszt3.png, id=396, 423.08063pt x 317.68687pt>
+File: images/Teszt3.png Graphic file (type png)
+ <use images/Teszt3.png>
+Package pdftex.def Info: images/Teszt3.png used on input line 40.
+(pdftex.def)             Requested size: 211.5398pt x 158.84303pt.
+
+[20
 
 
 
-] (C:\Users\√Ågikussz\Desktop\allamvizsga\tovabb.tex
-12. Chapter
-) [21
+] [21 <D:/Allamvizsga/DeepNeuralNetwork/dolgozat magyarul/images/Teszt2.png> <D
+:/Allamvizsga/DeepNeuralNetwork/dolgozat magyarul/images/Teszt3.png>]
+<images/Teszt7.png, id=411, 423.08063pt x 318.43968pt>
+File: images/Teszt7.png Graphic file (type png)
+ <use images/Teszt7.png>
+Package pdftex.def Info: images/Teszt7.png used on input line 57.
+(pdftex.def)             Requested size: 211.5398pt x 159.21945pt.
+
+<images/Teszt8.png, id=412, 423.08063pt x 317.68687pt>
+File: images/Teszt8.png Graphic file (type png)
+ <use images/Teszt8.png>
+Package pdftex.def Info: images/Teszt8.png used on input line 66.
+(pdftex.def)             Requested size: 211.5398pt x 158.84303pt.
+
+<images/Teszt9.png, id=413, 422.32782pt x 317.68687pt>
+File: images/Teszt9.png Graphic file (type png)
+ <use images/Teszt9.png>
+Package pdftex.def Info: images/Teszt9.png used on input line 75.
+(pdftex.def)             Requested size: 211.16339pt x 158.84303pt.
+) [22 <D:/Allamvizsga/DeepNeuralNetwork/dolgozat magyarul/images/Teszt7.png>]
+[23 <D:/Allamvizsga/DeepNeuralNetwork/dolgozat magyarul/images/Teszt8.png> <D:/
+Allamvizsga/DeepNeuralNetwork/dolgozat magyarul/images/Teszt9.png>] [24]
+("D:\Allamvizsga\DeepNeuralNetwork\dolgozat magyarul\tovabb.tex"
+11. fejezet
+) [25
 
 
 
-] (C:\Users\√Ågikussz\Desktop\allamvizsga\programs.tex
-13. Chapter
+] ("D:\Allamvizsga\DeepNeuralNetwork\dolgozat magyarul\programs.tex"
+12. fejezet
 LaTeX Font Info:    Try loading font information for T1+pcr on input line 8.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\t1pcr.fd"
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
@@ -1436,52 +1420,52 @@ File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\utf8.def"
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 )
-(C:\Users\√Ågikussz\Desktop\allamvizsga\progfiles/network.cpp
+("D:\Allamvizsga\DeepNeuralNetwork\dolgozat magyarul\progfiles/network.cpp"
 LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <8> not available
 (Font)              Font shape `T1/pcr/b/n' tried instead on input line 1.
- [22
+
+[26
 
 
 
-] [23]))
-[24] (C:\Users\√Ågikussz\Desktop\allamvizsga\dolgozat.bbl) [25
+] [27])) [28]
+("D:\Allamvizsga\DeepNeuralNetwork\dolgozat magyarul\dolgozat.bbl") [29
 
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 125.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 125.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 124.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 124.
 
-(C:\Users\√Ågikussz\Desktop\allamvizsga\dolgozat.aux
-(C:\Users\√Ågikussz\Desktop\allamvizsga\intro.aux)
-(C:\Users\√Ågikussz\Desktop\allamvizsga\eddigieredmenyek.aux)
-(C:\Users\√Ågikussz\Desktop\allamvizsga\roadSigns.aux)
-(C:\Users\√Ågikussz\Desktop\allamvizsga\segmentation.aux)
-(C:\Users\√Ågikussz\Desktop\allamvizsga\preprocessing.aux)
-(C:\Users\√Ågikussz\Desktop\allamvizsga\neuralnet.aux)
-(C:\Users\√Ågikussz\Desktop\allamvizsga\output.aux)
-(C:\Users\√Ågikussz\Desktop\allamvizsga\egyszeruteszt.aux)
-(C:\Users\√Ågikussz\Desktop\allamvizsga\eredmenyek.aux)
-(C:\Users\√Ågikussz\Desktop\allamvizsga\kovetkeztetesek.aux)
-(C:\Users\√Ågikussz\Desktop\allamvizsga\tovabb.aux)
-(C:\Users\√Ågikussz\Desktop\allamvizsga\programs.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 125.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 125.
+("D:\Allamvizsga\DeepNeuralNetwork\dolgozat magyarul\dolgozat.aux"
+("D:\Allamvizsga\DeepNeuralNetwork\dolgozat magyarul\intro.aux")
+("D:\Allamvizsga\DeepNeuralNetwork\dolgozat magyarul\eddigieredmenyek.aux")
+("D:\Allamvizsga\DeepNeuralNetwork\dolgozat magyarul\roadSigns.aux")
+("D:\Allamvizsga\DeepNeuralNetwork\dolgozat magyarul\segmentation.aux")
+("D:\Allamvizsga\DeepNeuralNetwork\dolgozat magyarul\preprocessing.aux")
+("D:\Allamvizsga\DeepNeuralNetwork\dolgozat magyarul\neuralnet.aux")
+("D:\Allamvizsga\DeepNeuralNetwork\dolgozat magyarul\output.aux")
+("D:\Allamvizsga\DeepNeuralNetwork\dolgozat magyarul\egyszeruteszt.aux")
+("D:\Allamvizsga\DeepNeuralNetwork\dolgozat magyarul\eredmenyek.aux")
+("D:\Allamvizsga\DeepNeuralNetwork\dolgozat magyarul\tovabb.aux")
+("D:\Allamvizsga\DeepNeuralNetwork\dolgozat magyarul\programs.aux"))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 124.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 124.
 Package rerunfilecheck Info: File `dolgozat.out' has not changed.
-(rerunfilecheck)             Checksum: 60632F39E211FA373A2542AB3A0CD3C7;4387.
+(rerunfilecheck)             Checksum: 3F498250A9F9B432BA22F24A90A83871;5262.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 125.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 124.
  ) 
 Here is how much of TeX's memory you used:
- 26166 strings out of 493921
- 470775 string characters out of 3147331
- 820594 words of memory out of 3000000
- 28558 multiletter control sequences out of 15000+200000
+ 27117 strings out of 493921
+ 490072 string characters out of 3147331
+ 842256 words of memory out of 3000000
+ 29500 multiletter control sequences out of 15000+200000
  68365 words of font info for 81 fonts, out of 3000000 for 9000
  899 hyphenation exceptions out of 8191
- 55i,10n,69p,757b,2324s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 55i,10n,69p,861b,2331s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program File
 s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX
  2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fon
@@ -1497,9 +1481,9 @@ ic/uhvb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8ac.pfb
 ><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program File
 s/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/font
 s/type1/urw/times/utmri8a.pfb>
-Output written on dolgozat.pdf (28 pages, 6585020 bytes).
+Output written on dolgozat.pdf (32 pages, 6617364 bytes).
 PDF statistics:
- 699 PDF objects out of 1000 (max. 8388607)
- 284 named destinations out of 1000 (max. 500000)
- 349 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 750 PDF objects out of 1000 (max. 8388607)
+ 296 named destinations out of 1000 (max. 500000)
+ 398 words of extra memory for PDF output out of 10000 (max. 10000000)
 
