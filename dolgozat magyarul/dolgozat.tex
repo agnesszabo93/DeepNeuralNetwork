@@ -3,8 +3,11 @@
 \documentclass[final]{ubb_dolgozat}
 \usepackage{definitions}
 \usepackage{pdfpages}
+\usepackage{epstopdf}
+\usepackage{algorithm,algpseudocode}
+\usepackage{paralist}
+\usepackage{hyperref}
 \usepackage{listings}
-
 \newcommand{\pdf}[1]{pythonCodes/#1.pdf}
 %%
 
@@ -76,9 +79,11 @@ Csató Lehel
 \begin{abstractEN} % ANGOL VÁLTOZAT
 
 \vfill
-There are numerous methods for road sign recognition but the rubust and cost-effective solution is still an active research subject. The recognisability of traffic signs is affected by many variables, like luminous intensity, shading, partial coverage and other obstacles. The developed system is recognising road sings using machine learning techniques taking in consideration the above mentioned factors. The most imoprtant is accuracy and speed. The application displays the examined image and analyses it on more background threads. Extracts random rectangles from the original picture and decides if it contains a traffic sign or not, and if it does categorises it. In case of a hit saves the coordinates and enframes it on the picture.
+There are numerous methods for road sign recognition but a rubust and cost-effective solution is still an active research subject. There are several factors hindering the effective recognition of traffic signs, like luminosity of the image, partial coverage, shading, and other obstacles. We aim for a system capable of recognising road sings using machine learning techniques taking in consideration the above mentioned factors. The most important is accuracy and speed. The application displays the examined image and analyses it on background threads. The program extracts random rectangles from the original picture and decides if it contains a traffic sign or not, and if it does, it categorises them.
+
 
 This work is the result of my own activity. I have neither given nor received unauthorized assistance on this work.
+
 
 \vfill
 
@@ -103,18 +108,22 @@ This work is the result of my own activity. I have neither given nor received un
 
 % a bevezető fejezet FILE-ja.
 \include{intro}
-\include{eddigieredmenyek}
+%\include{eddigieredmenyek}
 \include{roadSigns}
 \include{segmentation}
 \include{preprocessing}
 \include{neuralnet}
 \include{output}
-\include{egyszeruteszt}
 \include{eredmenyek}
-\include{tovabb}
+%\include{tovabb}
+\appendix
 \include{programs}
 
 {
+\renewcommand{\baselinestretch}{1.5}\normalsize %
+  \setlength{\itemsep}{-2.4mm}
+  \setlength{\bibspacing}{0.67\baselineskip}
+
 \bibliography{konyveszet}
 \bibliographystyle{IEEEtranN}
 \nocite{*}

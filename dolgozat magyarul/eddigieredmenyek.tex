@@ -1,18 +1,35 @@
-%!TEX root = minta_dolgozat.tex
+%!TEX root = dolgozat.tex
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Eddigi eredmények}\label{ch:eredmenyek}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Forgalmi táblák felismerésére több módszert fejlesztettek ki, ennek egyike a neurális hálókkal történő tanulás. Ebben a fejezetben bemutatok néhány alternatív módszert.
+\begin{osszefoglal}
+
+
+Forgalmi táblák felismerésére több módszert fejlesztettek ki, ennek egyike a neurális hálókkal történő tanulás. Ebben a fejezetben bemutatok néhány alternatív módszert:
+
+\begin{compactenum}
+  \item Szín és formai jellemzők kivonásával
+  \item Genetikus algoritmus alkalmazásával
+  \item Konvolúciós neurális hálóval
+\end{compactenum}
+
+\end{osszefoglal}
+
+
 
 \section{Szín és formai jellemzők kivonásával}
 
 A forgalmi táblákat színük és formájuk segítségével lehet kategorizálni, teljes felismerést viszont nem lehet biztosítani. Az \cite{1} hivatkozásban a forgalmi táblák belsejében levő szimbólum figyelmen kívül hagyásával végeztek kategorizálást, pusztán a forma és szín alapján. 
 
-Az \cite{6} hivatkozásban két részre osztható a javasolt megoldás
-\begin{enumerate}
+Az \cite{6} hivatkozásban két részre osztható a javasolt megoldás:
+\begin{compactenum}
 	\item A tábla megtalálása a képen
 	\item A tábla felismerése
-\end{enumerate}
+\end{compactenum}
 
-A tábla behatárolásához szín szerinti szűrést használ. Az így létrehozott bináris képből kiválasztja a fekete pixelek sűrűsége alapján azt a területet ami potenciálisan tartalmazza a táblát. Ezután forma alapján végez egy szűrést a képen. Amennyiben úgy véli, hogy megtalálta a forgalmi tábla helyét, elkezdi a felismerést. Pixelenként összehasonlítja a piros, zöld és kék komponensét a kinyert képnek egy mintaképpel mindegyik osztályból és ezekből számol egy átlagot. Abba az osztályba sorolja a képet, amelyik mintaképre a legnagyobb átlag jön ki.
+A \cite{6} hivatkozásban a tábla behatárolásához szín szerinti szűrést használ. Az így létrehozott bináris képből kiválasztja a fekete pixelek sűrűsége alapján azt a területet ami potenciálisan tartalmazza a táblát. Ezután forma alapján végez egy szűrést a képen. Amennyiben úgy véli, hogy megtalálta a forgalmi tábla helyét, elkezdi a felismerést. Pixelenként összehasonlítja a piros, zöld és kék komponensét a kinyert képnek egy mintaképpel mindegyik osztályból és ezekből számol egy átlagot. Abba az osztályba sorolja a képet, amelyik mintaképre a legnagyobb átlag jön ki.
+
+\section{Genetikus algoritmus alkalmazásával}
+
+A \cite{16} hivatkozásban genetikus algoritmust használnak a forgalmi tábla behatárolására a képen. 

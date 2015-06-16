@@ -1,27 +1,27 @@
-%!TEX root = minta_dolgozat.tex
+%!TEX root = dolgozat.tex
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Forgalmi táblák}\label{ch:SIGNS}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Mik a forgalmi táblák?}\label{sec:SIGNS:whatAreThey}
 
-A forgalmi táblák a forgalom irányításáért felelősek; figyelmeztetik, irányítják és informálják a gépkocsivezetőket. Három fő típusú forgalmi tábla van és mindegyiknek különböző formával rendelkezik:
-\begin{enumerate}
+A forgalmi táblák a forgalom irányításáért felelősek; figyelmeztetik, irányítják és informálják a gépkocsivezetőket. Három fő típusú forgalmi tábla van és mindegyik különböző formával rendelkezik:
+\begin{compactenum}
 	\item utasító táblák (kör)
 	\item figyelmeztető táblák (háromszög)
 	\item informáló táblák (téglalap)
-\end{enumerate}
+\end{compactenum}
 
-Ez alól kivétel a "stop" tábla, ami nyolcszög alakú.
+Ez alól kivétel a STOP tábla, ami nyolcszög alakú.
 
-További információval szolgál a forgalmi tábláról a színe. A forgalmi táblák figyelemfelkeltőek kell legyenek, ennek megfelelően alkalmazzák a színeket is. A megjelenő színek: piros, fehér, fekete, sárga és kék. \citep{8}
+További információval szolgál a forgalmi tábláról a színe. A forgalmi táblák figyelemfelkeltőek kell legyenek, ennek megfelelően alkalmazzák a színeket is. A megjelenő színek: piros, fehér, fekete, sárga és kék \cite{8}.
 
 A forgalmi táblák többsége két részből tevődik össze: egy külső telített sáv és egy belső szimbólum vagy szám. A belső szimbólum általában fekete. 
 
 
 \section{Adathalmaz}\label{sec:SIGNS:dataSet}
 
-Az adathalmazhoz egy forgalmi táblák felismerésére kitűzött németországi verseny adatait használtam fel.
+Az adathalmazhoz egy forgalmi táblák felismerésére kitűzött németországi verseny adatait használtam fel \cite{9}.
 
 \subsection{Tanulási adatok}
 
@@ -29,16 +29,17 @@ Az adathalmaz 1213 tanulási adatot tartalmaz. A képek mérete 16x16 pixeltől 
 
 Habár nagy mennyiségű tanulási adat áll rendelkezésre, ezek nincsenek egyenlően elosztva az osztályok között. Ez megnehezíti a tanulást a neurális háló számára. Azok az osztályok amelyekben kevés tanulási adat van, kevésbé vannak befolyással a neurális háló kimenetére. 
 
-\begin{figure}
-\centering
+A \ref{fig:trainingImage} ábrán látható példa négy tanítási adatra. Az első három képen levő táblák könnyedén felismerhetőek, míg a az utolsó tábla nehezen azonosítható. Nehéz megmondani, hogy 30-as, 70-es vagy 80-as sebességkorlát. Az adathalmazban kis számban ugyan, de előfordulnak ehhez hasonló táblák. Ezek megnehezítik a tanulási folyamatot.
 
-\includegraphics{images/train}
+\begin{figure}[h]
+\centering
+\includegraphics[scale=2]{images/train}
 \caption{Példa tanulási adatokra}
+\small forrás:\url{http://benchmark.ini.rub.de/?section=gtsdb&subsection=dataset}
+
 
 \label{fig:trainingImage}
 \end{figure}
-
-A \ref{fig:trainingImage} ábrán látható példa négy tanítási adatra. Az első három képen levő táblák könnyedén felismerhetőek, míg a az utolsó tábla nehezen azonosítható. Nehéz megmondani, hogy 30-as, de 70-es vagy 80-as sebességkorlát. Az adathalmazban kis számban ugyan, de előfordulnak ehhez hasonló táblák. Ezek megnehezítik a tanulási folyamatot.
 
 \subsection{Tesztelési adatok}
 
@@ -49,6 +50,7 @@ A \ref{fig:trainingImage} ábrán látható példa négy tanítási adatra. Az e
 
 \includegraphics[scale=0.4]{testImage}
 \caption{Példa teszt adatra}
+\small forrás:\url{http://benchmark.ini.rub.de/?section=gtsdb&subsection=dataset}
 
 \label{fig:testImage}
 \end{figure}

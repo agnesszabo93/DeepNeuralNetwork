@@ -1,36 +1,23 @@
 #include "network.h"
 
+//konstruktor
 Network::Network(std::vector<int> sizes)
 {
+	//retegek beallitasa
     _num_layers = sizes.size();
 
     _sizes = sizes;
 
+	//biasok inicializalasa
     _biases = Matrix2D(_sizes);
     _biases.randInit();
 
+	//sulyok inicializalasa
     _weights = Matrix3D(_sizes);
     _weights.randInit();
 }
 
-Vector Network::sigmoid(Vector z)
-{
-    Vector ret(z.GetCount());
-    for(unsigned int i =0; i<z.GetCount();i++)
-        ret.SetItem(i, 1.0 / (1.0 + exp(-z.GetItem(i))));
-    return ret;
-}
-
-Vector Network::sigmoid_prime(Vector z)
-{
-    Vector ret(z.GetCount());
-    Vector sigm(z.GetCount());
-    sigm = sigmoid(z);
-    for(unsigned int i = 0; i <z.GetCount(); i++)
-        ret.SetItem(i, sigm.GetItem(i) * (1 - sigm.GetItem(i)));
-    return ret;
-}
-
+//az elozo reteg kimenete segitsegevel kiszamolja a kovetkezo reteg kimenetet
 Vector Network::feedforward(Vector a)
 {
     for(unsigned int i = 0; i< _weights.GetMatrix2DCount();i++){
@@ -44,6 +31,7 @@ Vector Network::feedforward(Vector a)
     return a;
 }
 
+//a helyesen kategorizat kepek szama
 unsigned int Network::evaluate(DataSet testDataSet)
 {
     unsigned int correct = 0;
@@ -57,11 +45,13 @@ unsigned int Network::evaluate(DataSet testDataSet)
     return correct;
 }
 
+//szochasztikus gradiens csokkentes
 void Network::SGD(DataSet dataset,int epochs, int mini_batch_size, double eta, DataSet testDataSet)
 {
     unsigned int n = dataset.GetDataCount();
 
     for (unsigned int j = 0; j< epochs; j++){
+		//az adatok osszekeverese
         dataset.Shuffle();
         for (int i = 0; i <= n-mini_batch_size; i+=mini_batch_size){
             DataSet mini_batch = DataSet(dataset.GenerateMiniBatch(i,mini_batch_size));
@@ -69,6 +59,7 @@ void Network::SGD(DataSet dataset,int epochs, int mini_batch_size, double eta, D
         }
     }
 
+	//a vegso biasok kiirasa hogy felhasznalhato legyen kesobb
     struct stat buffer;
     std::string name = "biases.txt";
     if (stat(name.c_str(), &buffer) == 0){
@@ -76,6 +67,7 @@ void Network::SGD(DataSet dataset,int epochs, int mini_batch_size, double eta, D
     }
     _biases.writeData(name);
 
+	//a vegso sulyok kiirasa hogy felhasznalhato legyen kesobb
     struct stat buffer2;
     std::string name2 = "weights.txt";
     if (stat(name2.c_str(), &buffer2) == 0){
@@ -84,6 +76,7 @@ void Network::SGD(DataSet dataset,int epochs, int mini_batch_size, double eta, D
     _weights.writeData(name2);
 }
 
+//backpropagation alkalmazasa a batch-ekre
 void Network::updateMiniBatch(double eta, DataSet mini_batch)
 {
     Matrix2D nabla_b(_sizes);
@@ -104,6 +97,7 @@ void Network::updateMiniBatch(double eta, DataSet mini_batch)
         activations.SetDataRow(0,activation);
         Matrix2D zs(_sizes);
 
+		//a kimenetek kiszamitasa elore haladva
         for(unsigned int j = 0; j< _biases.GetVectorCount(); j++){
             Vector z(_biases.GetVector(j).GetCount());
             z.SetData(_weights.GetMatrix2D(j).dot(activation).add(_biases.GetVector(j)));
@@ -115,14 +109,17 @@ void Network::updateMiniBatch(double eta, DataSet mini_batch)
 
         Vector outActivation = activations.GetVector(activations.GetVectorCount()-1);
         Vector preferedOutput(outActivation.GetCount());
+		//elvart kimenet felepitese
         preferedOutput.SetItem(mini_batch_row.GetImageClass(),1.0);
 
+		//a kimeneti reteg hibajanak kiszamitasa
         Vector delta = cost_derivative(outActivation,preferedOutput).HadamardProd(sigmoid_prime(zs.GetVector(zs.GetVectorCount()-1)));
 
         nabla_b2.SetDataRow(nabla_b2.GetVectorCount()-1,delta);
 
         nabla_w2.SetData(nabla_w2.GetMatrix2DCount()-1,dot(delta,activations.GetVector(activations.GetVectorCount()-2)));
 
+		//backpropagation alkalmazva visszafele a retegek hibainak kiszamitasara
         for (unsigned int j = 2; j<_num_layers; j++){
             Vector z = zs.GetVector(zs.GetVectorCount()-j);
             Vector spv = sigmoid_prime(z);
@@ -139,39 +136,9 @@ void Network::updateMiniBatch(double eta, DataSet mini_batch)
         nabla_b = nabla_b.add(delta_nabla_b);
         nabla_w = nabla_w.add(delta_nabla_w);
     }
+	
+	//sulyok es biasok megfelelo modositasa
     _weights = _weights.sub(nabla_w.multiplyByScalar(eta/(double)mini_batch.GetDataCount()));
     _biases = _biases.sub(nabla_b.multiplyByScalar(eta/(double)mini_batch.GetDataCount()));
 }
 
-Vector Network::cost_derivative(Vector output_activations,Vector y)
-{
-    Vector delta = output_activations.sub(y);
-    return delta;
-}
-
-Matrix2D Network::dot(Vector v1,Vector v2)
-{
-    Matrix2D ret(v1.GetCount(),v2.GetCount());
-    Vector rowVector(v2.GetCount());
-    for(unsigned int i  = 0; i < v1.GetCount(); i++){
-        for(unsigned int j  = 0; j < v2.GetCount(); j++){
-            rowVector.SetItem(j,v1.GetItem(i)*v2.GetItem(j));
-        }
-        ret.SetDataRow(i,rowVector);
-    }
-    return ret;
-}
-
-Vector Network::dot(Matrix2D m,Vector v)
-{
-    Vector row(m.GetColumnCount());
-    double value;
-    for(unsigned int i  = 0; i < m.GetColumnCount(); i++){
-        value = 0;
-        for(unsigned int j  = 0; j < v.GetCount(); j++){
-            value+= m.getItem(j,i) * v.GetItem(j);
-        }
-        row.SetItem(i,value);
-    }
-    return row;
-}

@@ -1,14 +1,11 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: dolgozat.aux
 A level-1 auxiliary file: intro.aux
-A level-1 auxiliary file: eddigieredmenyek.aux
 A level-1 auxiliary file: roadSigns.aux
 A level-1 auxiliary file: segmentation.aux
 A level-1 auxiliary file: preprocessing.aux
 A level-1 auxiliary file: neuralnet.aux
 A level-1 auxiliary file: output.aux
-A level-1 auxiliary file: egyszeruteszt.aux
 A level-1 auxiliary file: eredmenyek.aux
-A level-1 auxiliary file: tovabb.aux
 A level-1 auxiliary file: programs.aux
 The style file: IEEEtranN.bst
 Database file #1: konyveszet.bib
@@ -16,11 +13,13 @@ Database file #1: konyveszet.bib
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 ** Natbib version - not for normal IEEE work.
-Warning--empty note in 6
-Warning--empty author and editor in 8
 Warning--empty note in 4
+Warning--empty note in 17
 Warning--empty note in 5
+Warning--empty note in 10
 Warning--empty note in 3
+Warning--empty note in 6
+Warning--empty note in 16
 
 Done.
-(There were 5 warnings)
+(There were 7 warnings)

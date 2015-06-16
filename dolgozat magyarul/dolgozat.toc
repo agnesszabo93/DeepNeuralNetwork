@@ -1,35 +1,34 @@
-\select@language {magyar} \contentsline {chapter}{\numberline {1}Bevezet\IeC {\H o}}{4}{chapter.1}
-\select@language {magyar} \contentsline {section}{\numberline {1.1}C\IeC {\'e}l}{4}{section.1.1}
-\select@language {magyar} \contentsline {section}{\numberline {1.2}Megval\IeC {\'o}s\IeC {\'\i }t\IeC {\'a}s}{4}{section.1.2}
-\select@language {magyar} \contentsline {chapter}{\numberline {2}Eddigi eredm\IeC {\'e}nyek}{5}{chapter.2}
-\select@language {magyar} \contentsline {section}{\numberline {2.1}Sz\IeC {\'\i }n \IeC {\'e}s formai jellemz\IeC {\H o}k kivon\IeC {\'a}s\IeC {\'a}val}{5}{section.2.1}
-\select@language {magyar} \contentsline {chapter}{\numberline {3}Forgalmi t\IeC {\'a}bl\IeC {\'a}k}{6}{chapter.3}
-\select@language {magyar} \contentsline {section}{\numberline {3.1}Mik a forgalmi t\IeC {\'a}bl\IeC {\'a}k?}{6}{section.3.1}
-\select@language {magyar} \contentsline {section}{\numberline {3.2}Adathalmaz}{6}{section.3.2}
-\select@language {magyar} \contentsline {subsection}{\numberline {3.2.1}Tanul\IeC {\'a}si adatok}{6}{subsection.3.2.1}
-\select@language {magyar} \contentsline {subsection}{\numberline {3.2.2}Tesztel\IeC {\'e}si adatok}{7}{subsection.3.2.2}
-\select@language {magyar} \contentsline {chapter}{\numberline {4}Darabol\IeC {\'a}s}{8}{chapter.4}
-\select@language {magyar} \contentsline {chapter}{\numberline {5}K\IeC {\'e}pek el\IeC {\H o}feldolgoz\IeC {\'a}sa}{10}{chapter.5}
-\select@language {magyar} \contentsline {section}{\numberline {5.1}Sz\IeC {\'\i }nterek}{10}{section.5.1}
-\select@language {magyar} \contentsline {subsection}{\numberline {5.1.1}RGB sz\IeC {\'\i }nt\IeC {\'e}r}{10}{subsection.5.1.1}
-\select@language {magyar} \contentsline {subsection}{\numberline {5.1.2}HSV sz\IeC {\'\i }nt\IeC {\'e}r}{11}{subsection.5.1.2}
-\select@language {magyar} \contentsline {section}{\numberline {5.2}Megval\IeC {\'o}s\IeC {\'\i }t\IeC {\'a}s}{11}{section.5.2}
-\select@language {magyar} \contentsline {section}{\numberline {5.3}\IeC {\'A}tm\IeC {\'e}retez\IeC {\'e}s}{12}{section.5.3}
-\select@language {magyar} \contentsline {chapter}{\numberline {6}Neur\IeC {\'a}lis h\IeC {\'a}l\IeC {\'o}k}{13}{chapter.6}
-\select@language {magyar} \contentsline {section}{\numberline {6.1}Bevezet\IeC {\H o}}{13}{section.6.1}
-\select@language {magyar} \contentsline {subsection}{\numberline {6.1.1}Biol\IeC {\'o}giai modell}{13}{subsection.6.1.1}
-\select@language {magyar} \contentsline {section}{\numberline {6.2}Mesters\IeC {\'e}ges neuronok}{13}{section.6.2}
-\select@language {magyar} \contentsline {subsection}{\numberline {6.2.1}Szigmoid neuron}{13}{subsection.6.2.1}
-\select@language {magyar} \contentsline {section}{\numberline {6.3}Szerkezek}{15}{section.6.3}
-\select@language {magyar} \contentsline {section}{\numberline {6.4}Sztochasztikus gradiens cs\IeC {\"o}kkent\IeC {\'e}s}{15}{section.6.4}
-\select@language {magyar} \contentsline {section}{\numberline {6.5}Backpropagation}{16}{section.6.5}
-\select@language {magyar} \contentsline {chapter}{\numberline {7}Az algoritmus}{17}{chapter.7}
-\select@language {magyar} \contentsline {chapter}{\numberline {8}A kimenet}{18}{chapter.8}
-\select@language {magyar} \contentsline {chapter}{\numberline {9}El\IeC {\H o}zetes tesztel\IeC {\'e}s}{19}{chapter.9}
-\select@language {magyar} \contentsline {chapter}{\numberline {10}Eredm\IeC {\'e}nyek \IeC {\'e}s k\IeC {\"o}vetkeztet\IeC {\'e}sek}{20}{chapter.10}
-\select@language {magyar} \contentsline {section}{\numberline {10.1}R\IeC {\'e}tegek sz\IeC {\'a}m\IeC {\'a}nak meghat\IeC {\'a}roz\IeC {\'a}sa}{20}{section.10.1}
-\select@language {magyar} \contentsline {section}{\numberline {10.2}Tanul\IeC {\'a}si r\IeC {\'a}ta meghat\IeC {\'a}roz\IeC {\'a}sa}{20}{section.10.2}
-\select@language {magyar} \contentsline {section}{\numberline {10.3}Batch m\IeC {\'e}ret\IeC {\'e}nek meghat\IeC {\'a}roz\IeC {\'a}sa}{22}{section.10.3}
-\select@language {magyar} \contentsline {section}{\numberline {10.4}Ciklusok sz\IeC {\'a}m\IeC {\'a}nak meghat\IeC {\'a}roz\IeC {\'a}sa}{22}{section.10.4}
-\select@language {magyar} \contentsline {chapter}{\numberline {11}Tov\IeC {\'a}bbfejleszt\IeC {\'e}si lehet\IeC {\H o}s\IeC {\'e}gek}{25}{chapter.11}
-\select@language {magyar} \contentsline {chapter}{\numberline {12}Fontosabb programk\IeC {\'o}dok list\IeC {\'a}ja}{26}{chapter.12}
+\select@language {magyar} \contentsline {chapter}{\numberline {1}Bevezet\IeC {\H o}}{3}{chapter.1}
+\select@language {magyar} \contentsline {section}{\numberline {1.1}A dolgozat c\IeC {\'e}lja}{3}{section.1.1}
+\select@language {magyar} \contentsline {section}{\numberline {1.2}Megval\IeC {\'o}s\IeC {\'\i }t\IeC {\'a}s}{3}{section.1.2}
+\select@language {magyar} \contentsline {chapter}{\numberline {2}Forgalmi t\IeC {\'a}bl\IeC {\'a}k}{4}{chapter.2}
+\select@language {magyar} \contentsline {section}{\numberline {2.1}Mik a forgalmi t\IeC {\'a}bl\IeC {\'a}k?}{4}{section.2.1}
+\select@language {magyar} \contentsline {section}{\numberline {2.2}Adathalmaz}{4}{section.2.2}
+\select@language {magyar} \contentsline {subsection}{\numberline {2.2.1}Tanul\IeC {\'a}si adatok}{4}{subsection.2.2.1}
+\select@language {magyar} \contentsline {subsection}{\numberline {2.2.2}Tesztel\IeC {\'e}si adatok}{5}{subsection.2.2.2}
+\select@language {magyar} \contentsline {chapter}{\numberline {3}Darabol\IeC {\'a}s}{6}{chapter.3}
+\select@language {magyar} \contentsline {chapter}{\numberline {4}K\IeC {\'e}pek el\IeC {\H o}feldolgoz\IeC {\'a}sa}{8}{chapter.4}
+\select@language {magyar} \contentsline {section}{\numberline {4.1}Sz\IeC {\'\i }nterek}{8}{section.4.1}
+\select@language {magyar} \contentsline {subsection}{\numberline {4.1.1}RGB sz\IeC {\'\i }nt\IeC {\'e}r}{8}{subsection.4.1.1}
+\select@language {magyar} \contentsline {subsection}{\numberline {4.1.2}HSV sz\IeC {\'\i }nt\IeC {\'e}r}{8}{subsection.4.1.2}
+\select@language {magyar} \contentsline {section}{\numberline {4.2}Megval\IeC {\'o}s\IeC {\'\i }t\IeC {\'a}s}{9}{section.4.2}
+\select@language {magyar} \contentsline {section}{\numberline {4.3}\IeC {\'A}tm\IeC {\'e}retez\IeC {\'e}s}{10}{section.4.3}
+\select@language {magyar} \contentsline {chapter}{\numberline {5}Neur\IeC {\'a}lis h\IeC {\'a}l\IeC {\'o}zatok}{11}{chapter.5}
+\select@language {magyar} \contentsline {section}{\numberline {5.1}Bevezet\IeC {\H o}}{11}{section.5.1}
+\select@language {magyar} \contentsline {subsection}{\numberline {5.1.1}Biol\IeC {\'o}giai modell}{11}{subsection.5.1.1}
+\select@language {magyar} \contentsline {section}{\numberline {5.2}Mesters\IeC {\'e}ges neuronok}{11}{section.5.2}
+\select@language {magyar} \contentsline {subsection}{\numberline {5.2.1}Szigmoid neuron}{12}{subsection.5.2.1}
+\select@language {magyar} \contentsline {section}{\numberline {5.3}Neur\IeC {\'a}lis h\IeC {\'a}l\IeC {\'o}k strukt\IeC {\'u}r\IeC {\'a}ja}{12}{section.5.3}
+\select@language {magyar} \contentsline {section}{\numberline {5.4}Sztochasztikus gradiens cs\IeC {\"o}kkent\IeC {\'e}s}{14}{section.5.4}
+\select@language {magyar} \contentsline {section}{\numberline {5.5}Backpropagation}{15}{section.5.5}
+\select@language {magyar} \contentsline {chapter}{\numberline {6}Az algoritmus}{16}{chapter.6}
+\select@language {magyar} \contentsline {chapter}{\numberline {7}A kimenet}{17}{chapter.7}
+\select@language {magyar} \contentsline {chapter}{\numberline {8}Eredm\IeC {\'e}nyek \IeC {\'e}s k\IeC {\"o}vetkeztet\IeC {\'e}sek}{18}{chapter.8}
+\select@language {magyar} \contentsline {section}{\numberline {8.1}R\IeC {\'e}tegek sz\IeC {\'a}m\IeC {\'a}nak meghat\IeC {\'a}roz\IeC {\'a}sa}{18}{section.8.1}
+\select@language {magyar} \contentsline {section}{\numberline {8.2}Tanul\IeC {\'a}si r\IeC {\'a}ta meghat\IeC {\'a}roz\IeC {\'a}sa}{18}{section.8.2}
+\select@language {magyar} \contentsline {section}{\numberline {8.3}Batch m\IeC {\'e}ret\IeC {\'e}nek meghat\IeC {\'a}roz\IeC {\'a}sa}{19}{section.8.3}
+\select@language {magyar} \contentsline {section}{\numberline {8.4}Ciklusok sz\IeC {\'a}m\IeC {\'a}nak meghat\IeC {\'a}roz\IeC {\'a}sa}{21}{section.8.4}
+\select@language {magyar} \contentsline {chapter}{\numberline {A}Fontosabb programk\IeC {\'o}dok list\IeC {\'a}ja}{22}{appendix.A}
+\select@language {magyar} \contentsline {section}{\numberline {A.1}A neur\IeC {\'a}lis h\IeC {\'a}l\IeC {\'o}}{22}{section.A.1}
+\select@language {magyar} \contentsline {section}{\numberline {A.2}Az adatok el\IeC {\H o}feldolgoz\IeC {\'a}sa}{24}{section.A.2}
+\select@language {magyar} \contentsline {section}{\numberline {A.3}A \textit {main} f\IeC {\"u}ggv\IeC {\'e}ny}{25}{section.A.3}

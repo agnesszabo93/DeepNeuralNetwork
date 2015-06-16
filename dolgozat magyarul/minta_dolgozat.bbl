@@ -22,6 +22,10 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
+\bibitem[8(2010)]{8}
+\emph{Know your traffic signs official edition}.\hskip 1em plus 0.5em minus
+  0.4em\relax London Department for Transport, 2010.
+
 \bibitem[Gao et~al.(2006)Gao, Padladchikova, Shaposhnikov, Hong, and
   Shevtsova]{1}
 X.~W. Gao, L.~Padladchikova, D.~Shaposhnikov, K.~Hong, and N.~Shevtsova,
@@ -37,6 +41,12 @@ R.~Ohlander, K.~Price, and D.~R. Reddy, ``Picture segmentation using a
   recursive region splitting method,'' \emph{Computer graphics and image
   processing}, vol.~8, pp. 313--333, 1978.
 
+\bibitem[Ford and Roberts(1998)]{4}
+A.~Ford and A.~Roberts, ``Colour space conversions,'' 1998.
+
+\bibitem[Nielsen(2014)]{5}
+M.~A. Nielsen, ``Neural networks and deep learning,'' 2014.
+
 \bibitem[Escalera et~al.(2011)Escalera, Baró, Pujon, Vitria, and Radeva]{2}
 S.~Escalera, X.~Baró, O.~Pujon, J.~Vitria, and P.~Radeva, ``Traffic-sign
   recognition systems,'' \emph{Journal of Visual Communication and Image
@@ -44,15 +54,5 @@ S.~Escalera, X.~Baró, O.~Pujon, J.~Vitria, and P.~Radeva, ``Traffic-sign
 
 \bibitem[Brkic(2010)]{3}
 K.~Brkic, ``An overview of traffic sign detection methods,'' 2010.
-
-\bibitem[Ford and Roberts(1998)]{4}
-A.~Ford and A.~Roberts, ``Colour space conversions,'' 1998.
-
-\bibitem[Nielsen(2014)]{5}
-M.~A. Nielsen, ``Neural networks and deep learning,'' 2014.
-
-\bibitem[8(2010)]{8}
-\emph{Know your traffic signs official edition}.\hskip 1em plus 0.5em minus
-  0.4em\relax London Department for Transport, 2010.
 
 \end{thebibliography}

@@ -19,68 +19,78 @@ Az elkövetkezendő teszteredmények olyan rendszerben készültek, ahol nem vol
 
 \section{Tanulási ráta meghatározása}
 
-A tanulási ráta behatárolására először három, négy osztályra futtattam teszteket. Ez által gyorsan kaptam egy viszonyítási pontot, amit majd alkalmazni tudtam a több osztályra történő futáskor.
+A tanulási ráta behatárolására először három-négy osztályra futtattam teszteket. Ez által gyorsan kaptam egy viszonyítási pontot, amit majd alkalmazni tudtam a több osztályra történő futáskor.
 
-Elsőnek 1-es tanulási rátával próbálkoztam. Az eredmények elég pozitívak voltak, a \ref{fig:learningrate1} ábrán látható a helyesen kategorizált képek száma minden ciklusban.
+A tanulási ráta általában 0 és 1 között vehet fel értékeket. Én nagyobb tanulási rátával is próbálkoztam \cite{10}. 
 
-\begin{figure}
+Elsőnek 1-es tanulási rátával próbálkoztam. Az eredmények pozitívak voltak, a \ref{fig:learningrate1} ábrán látható a helyesen kategorizált képek száma minden ciklusban. 
+
+Ezek után a tanulási ráta növelésével próbálkoztam. Habár a helyesen kategorizált képek száma minimálisan csökkent, ebben az esetben a háló sokkal hamarabb kezdte megtanulni az osztályok jellemzőit. A \ref{fig:learningrate2} ábrán jól látszik, hogy a görbe sokkal meredekebb eleinte, vagyis gyorsabban tanul az elején és utána normalizálódik. A maximum elérése után a kezdeti oszcilláció is megszűnik.
+
+\begin{figure}[h]
 \centering
 
-\includegraphics[scale=0.4]{images/Teszt2}
-\caption{1-es tanulási ráta}
+\includegraphics[scale=0.4]{images/Teszt2_}
+\caption{Helyesen felismert képek száma 1-es tanulási ráta mellett ciklusonként}
 
 \label{fig:learningrate1}
 \end{figure}
 
-Ezek után a tanulási ráta növelésével próbálkoztam. Habár a helyesen kategorizált képek száma minimálisan csökkent, ebben az esetben a háló sokkal hamarabb kezdte megtanulni az osztályok jellemzőit. A \ref{fig:learningrate2} ábrán jól látszik, hogy sokkal meredekebb az elején, vagyis gyorsabban tanul az elején és utána normalizálódik. A maximum elérése után a kezdeti oszcilláció is megszűnik.
-
-\begin{figure}
+\begin{figure}[h]
 \centering
 
-\includegraphics[scale=0.4]{images/Teszt3}
-\caption{3-as tanulási ráta}
+\includegraphics[scale=0.4]{images/Teszt3_}
+\caption{Helyesen felismert képek száma 3-as tanulási ráta mellett ciklusonként}
 
 \label{fig:learningrate2}
 \end{figure}
 
-Végeztem teszteket más értékű tanulási rátával is, de ha nem változtattam nagy mértékben az értéket, akkor hasonló eredményt adtak. Ha túlságosan megnöveltem az értékét, az oszcilláció ami a \ref{fig:learningrate2} ábra elején látható megnőtt és nagy mértékben lecsökkent a felismert táblák száma. Ha túl kicsi értéket választottam, a tanulási folyamat nagyon lassan indult be. Ebből kiindulva a további tesztekhez a tanulási rátát háromnak választottam meg.
+Végeztem teszteket más értékű tanulási rátával is, de ha nem változtattam nagy mértékben az értéket, akkor hasonló eredményeket kaptam.
+
+Ha túlságosan megnöveltem az értékét, az oszcilláció ami a \ref{fig:learningrate2} ábra elején látható megnőtt és nagy mértékben lecsökkent a felismert táblák száma. Ha túl kicsi értéket választottam (0,0001), a tanulási folyamat 300 ciklus után sem indult be, a felismert képek száma 0 maradt. 
+Ugyan az 1-es tanulási ráta is hasonló pontosságot eredményezett mint a 3-as, a 3-as tanulási ráta mellett sokkal kevesebb ciklusra van szükség a pontosság maximalizálásához. Emiatt a többi paraméter meghatározásakor a 3-as tanulási rátával dolgoztam. A paraméterek meghatározása után a nagy adatmennyiség gyors feldolgozása érdekében használtam 3-as tanulási rátát, a pontosság növeléséhez viszont 0,8-as tanulási rátát használtam több cikluson keresztül.
+Ebből kiindulva a további tesztekhez a tanulási rátát háromnak választottam meg.
+
+Lehetséges adaptív megoldásokat alkalmazni, ahol a tanulási ráta lépésenként változik, ezt én nem próbáltam ki, mert a tanulás beindulása után nem lépett fel oszcilláció \cite{10}. 
+
+
 
 \section{Batch méretének meghatározása}
 
 A batch méretének meghatározásához is több tesztet futtattam különböző értékekre. A behatárolást ebben az esetben is kis méretű adathalmazra végeztem.
 
-A batch méretének változtatása nem volt nagy hatással a helyesen kategorizált képek számára. A  \ref{fig:batchsize1}, \ref{fig:batchsize2} és \ref{fig:batchsize3} ábrákon látható a 10-re, 20-ra, illetve 30-ra kapott eredmények. Nincs nagy különbség közöttük, de a 30-as értékre let legnagyobb a felismert táblák száma, ezért a továbbiakban ezzel az értékkel dolgoztam. Nagyobb mennyiségű tesztadatra megpróbáltam később a bath méretét 10-re állítani, de a tanulás jelentősen nehezebben indult be, ezért nem végeztem vele több tesztet. 
+A batch méretének változtatása nem volt nagy hatással a helyesen kategorizált képek számára. A  \ref{fig:batchsize1}, \ref{fig:batchsize2} és \ref{fig:batchsize3} ábrákon látható a 10-re, 20-ra, illetve 30-ra kapott eredmények. Nincs nagy különbség közöttük, de a 30-as értékre lett a legnagyobb a felismert táblák száma, ezért a továbbiakban ezzel az értékkel dolgoztam. Nagyobb mennyiségű tesztadatra megpróbáltam később a bath méretét 10-re állítani, de a tanulás jóval nehezebben indult be, ezért nem végeztem vele több tesztet. 
 
-\begin{figure}
+\begin{figure}[h]
 \centering
 
-\includegraphics[scale=0.5]{images/Teszt7}
-\caption{10-es bath méret eredményei}
+\includegraphics[scale=0.4]{images/Teszt7}
+\caption{ Helyesen felismert képek száma 10-es bath méret mellett ciklusonként}
 
 \label{fig:batchsize1}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[h]
 \centering
 
-\includegraphics[scale=0.5]{images/Teszt8}
-\caption{20-as bath méret eredményei}
+\includegraphics[scale=0.4]{images/Teszt8}
+\caption{Helyesen felismert képek száma  20-as bath méret mellett ciklusonként}
 
 \label{fig:batchsize2}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[h]
 \centering
 
-\includegraphics[scale=0.5]{images/Teszt9}
-\caption{30-as bath méret eredményei}
+\includegraphics[scale=0.4]{images/Teszt9}
+\caption{Helyesen felismert képek száma  30-as bath méret mellett ciklusonként}
 
 \label{fig:batchsize3}
 \end{figure}
 
 \section{Ciklusok számának meghatározása}
 
-A ciklusok száma a tanulási folyamatban nem játszik olyan fontos szerepet mint a tanulási ráta, viszont ha túl kicsinek választjuk meg a hálónak nincs elég ideje tanulni. A nagy ciklusszám nincs negatív hatással a felismert táblák számára, de feleslegesen növeli a futási időt. Miután a háló elérte azt a pontot, hogy nem képes tovább fejlődni, felesleges további ciklusokat futtatni. Lehetne egy olyan feltételt beiktatni, hogy ha egy bizonyos százalékban felismeri a háló a táblákat akkor állítsuk le a tanulást meg mielőtt az összes ciklust végrehajtanánk, de ha ezt a százalékot túl nagyra állítjuk és ez által elérhetetlenné válik, akkor felesleges, ha pedig túl kicsire, a futási időt ugyan lecsökkent, de a háló még képes lett volna tanulni tovább.
+A ciklusok száma a tanulási folyamatban nem játszik olyan fontos szerepet mint a tanulási ráta, viszont ha túl kicsinek választjuk meg a hálónak nincs elég ideje tanulni. A nagy ciklusszám nincs negatív hatással a felismert táblák számára, de feleslegesen növeli a futási időt. Miután a háló elérte azt a pontot, amikor már nem képes tovább fejlődni, felesleges további ciklusokat futtatni. Lehetne egy olyan feltételt beiktatni, hogy ha egy bizonyos százalékban felismeri a háló a táblákat akkor állítsuk le a tanulást még mielőtt az összes ciklust végrehajtanánk, de ha ezt a százalékot túl nagyra állítjuk és ez által elérhetetlenné válik, akkor felesleges, ha pedig túl kicsire, a futási időt ugyan lecsökkent, de a háló még képes lett volna tanulni tovább.
 
-100 ciklus ez esetek többségében elégségesnek bizonyul, de néha 50 ciklus is ugyanazt eredményezte. 
+100 ciklus ez esetek többségében elégségesnek bizonyul, de sok esetben 50 ciklus is ugyanazt eredményezte. 
 
