@@ -1,0 +1,11 @@
+%!TEX root = minta_dolgozat.tex
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Előzetes tesztelés}\label{ch:easytest}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Le akartam ellenőrizni, hogy mennyire helyes és hatékony az általam kódolt tanítási program. Ehhez tanítási és teszt adatokat generáltam. Két kategóriát hoztam létre: Az egyik osztályban a képek felső része többnyire fekete volt és az alsó többnyire fekete, a másikban pedig fordítva. 
+A fekete oldalon a pixelek 20%-os valószínűséggel fehérek, 80% valószínűséggel fekete; a fehér oldalon a pixelek 20%-os valószínűséggel feketék,80% valószínűséggel fehérek. A tesztelés lényege az volt, hogy a program felismerje, hogy a fentebb említett 2 kategória közül melyikbe esik bele a kép. 
+
+A generált képek 16*16 pixelesek voltak.
+
+A neurális háló az összes hasonlóan létrehozott tesztelési képet megfelelően kategorizálta.
