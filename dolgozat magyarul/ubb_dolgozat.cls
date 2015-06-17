@@ -3,7 +3,7 @@
 %%      Babes-Bolyai Egyetem stilusfile-ja
 %%
 %%      (c) Csató Lehel 2010, 2013
-%%
+%%      (c) Bodó Zalán 2015 :)
 %%
 
 \NeedsTeXFormat{LaTeX2e}
@@ -103,19 +103,19 @@
     %% ENG
     \vspace*{-20mm}%
 	  \thispagestyle{empty}%
-    {\huge\scshape\noindent\@uniEN\par}%
+    {\fontsize{18}{20}\selectfont\scshape\noindent\@uniEN\par}%
     \vspace{25mm}
     \begin{center}%
   	  \fontsize{18}{20}\usefont{OT1}{phv}{bc}{n}\selectfont
-      \Large\bfseries
+      \bfseries
       License Thesis\par
       \vspace*{5mm}
-      \huge\@titleEN \par%
+      \fontsize{26}{28}\selectfont\@titleEN \par%
       \vspace*{10mm}
       \pgfimage[width=7.5cm]{logo_ubb}
     \end{center}
     \vfill
-    {\Large\scshape\noindent%
+    {\fontsize{16}{18}\selectfont\scshape\noindent%
       \begin{minipage}[t]{0.6\linewidth}%
 				\baselineskip 2ex \parskip 0.5ex
         \noindent Scientific supervisor:\vspace*{0.3cm}
@@ -133,7 +133,7 @@
     }
     \vspace*{0.2cm}
     \begin{center}%
-   	  \huge\scshape \@submitmonthEN\  \@submityear %
+   	  \fontsize{18}{20}\selectfont\scshape \@submitmonthEN\  \@submityear %
     \end{center}
     \vspace{-1.4cm}%
     % page
@@ -141,19 +141,19 @@
     %% RO
     \vspace*{-20mm}%
 	  \thispagestyle{empty}%
-    {\huge\scshape\noindent\@uniRO\par}%
+    {\fontsize{18}{20}\selectfont\scshape\noindent\@uniRO\par}%
     \vspace{25mm}
     \begin{center}%
   	  \fontsize{18}{20}\usefont{OT1}{phv}{bc}{n}\selectfont
-      \Large\bfseries
+      \bfseries
       Lucrare de licen\c{t}\u{a}\par
       \vspace*{5mm}
-      \huge\@titleRO \par%
+      \fontsize{26}{28}\selectfont\@titleRO \par%
       \vspace*{10mm}
       \pgfimage[width=7.5cm]{logo_ubb}
     \end{center}
     \vfill
-    {\Large\scshape\noindent%
+    {\fontsize{16}{18}\selectfont\scshape\noindent%
       \begin{minipage}[t]{0.6\linewidth}%
 				\baselineskip 2ex \parskip 0.5ex
         \noindent Conduc\u{a}tor \c{s}tiin\c{t}ific:\vspace*{0.3cm}
@@ -171,7 +171,7 @@
     }
     \vspace*{0.2cm}
     \begin{center}%
-   	  \huge\scshape \@submitmonthRO\  \@submityear %
+   	  \fontsize{18}{20}\selectfont\scshape \@submitmonthRO\  \@submityear %
     \end{center}
     \vspace{-1.4cm}%
     % page
@@ -179,19 +179,19 @@
 	  % HU
     \vspace*{-20mm}%
 	  \thispagestyle{empty}%
-    {\huge\scshape\noindent\@uniHU\par}%
+    {\fontsize{18}{20}\selectfont\scshape\noindent\@uniHU\par}%
     \vspace{25mm}
     \begin{center}%
       \fontsize{18}{20}\usefont{OT1}{phv}{bc}{n}\selectfont
-      \Large\bfseries
+      \bfseries
       Licensz-dolgozat\par
       \vspace*{5mm}
-      \huge\@titleHU \par%
+      \fontsize{26}{28}\selectfont\@titleHU \par%
       \vspace*{10mm}
       \pgfimage[width=7.5cm]{logo_ubb}
     \end{center}
     \vfill
-    {\Large\scshape\noindent%
+    {\fontsize{16}{18}\selectfont\scshape\noindent%
       \begin{minipage}[t]{0.6\linewidth}%
       	\baselineskip 2ex \parskip 0.5ex
         \noindent Témavezet\H{o}:\vspace*{0.3cm}
@@ -209,7 +209,7 @@
     }
     \vspace*{0.2cm}
     \begin{center}%
-      \huge\scshape \@submityear\  \@submitmonthHU %
+      \fontsize{18}{20}\selectfont\scshape \@submityear\  \@submitmonthHU %
     \end{center}
     \vspace{-1.4cm}%
 	\end{titlepage}%
@@ -367,7 +367,10 @@
   \vspace*{30\p@}%
   {\parindent \z@ \raggedright
     \reset@font
-    \huge \bfseries  #1\par
+    %\huge \bfseries 
+    \fontsize{18}{20}\usefont{OT1}{phv}{bc}{n}\selectfont 
+    \huge \bfseries
+    #1\par
     %\nobreak
     \vskip 30\p@
   }}
@@ -440,12 +443,12 @@
   \titlepage
   \thispagestyle{empty}%
   \vspace*{-20mm}%
-  {\Large\scshape\noindent\@uniEN\par}%
+  {\fontsize{18}{20}\selectfont\scshape\noindent\@uniEN\par}%
   \vspace{5mm}
   \begin{center}
-    {\bfseries\large License Thesis\par}
+    {\bfseries\fontsize{18}{20}\selectfont License Thesis\par}
     \vspace*{1.5em}
-    {\huge\bfseries \@titleEN \par}%
+    {\fontsize{26}{28}\selectfont\bfseries \@titleEN \par}%
     \vspace*{1.5em}
     \bfseries Abstract\\
     \vspace*{1.5em}
@@ -453,9 +456,9 @@
   }
   { \par\vspace{5mm}
     \vspace{2em}
-    {\noindent\Large\scshape\@submitmonthEN\  \@submityear \hfill\@author\par}%
+    {\noindent\fontsize{16}{18}\selectfont\scshape\@submitmonthEN\  \@submityear \hfill\@author\par}%
     \vspace*{3em}
-    {\noindent\scshape\Large Advisor:\\
+    {\noindent\scshape\fontsize{16}{18}\selectfont Advisor:\\
     \@tutorEN}
     %\vfill
     \endtitlepage

@@ -3,9 +3,9 @@
 \usepackage{t1enc}
 \usepackage[utf8]{inputenc}% FONTS
 \usepackage{times}
-\usepackage[T1]{fontenc}
 % FONTS for typewriter
 %\usepackage[scaled=0.7]{luximono}
+%\usepackage[T1]{fontenc}
 %\renewcommand\ttdefault{ul9}
 
 \usepackage[titles]{tocloft}
@@ -31,8 +31,8 @@
 
 %%% bibliography
 % \usepackage[square]{natbib}
-% \usepackage[numbers,sort]{natbib}
-\usepackage[square,sort]{natbib}
+\usepackage[numbers,sort]{natbib}
+%\usepackage[square,sort]{natbib}
 \usepackage{natbibspacing}
 %%
 \renewcommand{\cite}{\protect\citep}
@@ -50,6 +50,7 @@
 \definecolor{urlCol} {rgb}{0.2, 0.2, 0.5}
 %%
 \usepackage[%
+    a4paper,          % lapméret
     raiselinks=true,  %
     colorlinks=true,  %
     plainpages=true,  %
@@ -78,27 +79,8 @@
     backgroundcolor=\color{algBgCol},
     lineskip=-0.3ex,
     breaklines=true,
-    nolol,
-    extendedchars=true,
-    inputencoding=utf8,
-    literate={á}{{\'a}}1 {é}{{\'e}}1 {ó}{{\'o}}1 {ú}{{\'u}}1 {ü}{{\"u}}1  {ö}{{\"o}}1  {í}{{\'\i}}1 {ű}{{\H{u}}}1 {ő}{{\H{o}}}1 
+    nolol
 }
-
-%%%%%%%%%%%% Theorem, Proof, etc. environments %%%%%%%%%%%%%%%%
-\usepackage{amsthm}
-\theoremstyle{plain}
-\newtheorem{tet}{Tétel}[chapter]
-\newtheorem{lem}[tet]{Lemma}
-\newtheorem{kov}[tet]{Következmény}
-\newtheorem*{tetel}{Tétel} %számozás nélküli tétel! ne használd, csak ha nagyon muszáj!
-\theoremstyle{definition}
-\newtheorem{ert}[tet]{Értelmezés}
-\newtheorem{pld}[tet]{Példa}
-\theoremstyle{remark}
-\newtheorem{meg}[tet]{Megjegyzés}
-\renewcommand{\qedsymbol}{$\blacksquare$} %bizonyítás végén fekete négyzet.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 
 % italic abbreviations
 \newcommand{\stb}{{\it stb.}}
@@ -189,7 +171,6 @@
   osz-tá-lyoz
   osz-tá-lyo-zó
   össze-a-dás
-  pa-ran-csok
   sú-lyok-hoz
   szak-i-ro-da-lom-ban
   szá-mí-tó-gép=-tech-no-ló-gia
